@@ -1,30 +1,376 @@
 ---
-title: "01_DataOrg"
+title: "Aztec BOM Ceramic Chronology Script #1:"
+subtitle: "Data Prep..."
 author: "Rudolf Cesaretti"
-date: "2022-07-26"
-output: html_document
+date: "Last run on `r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    df_print: paged
+    number_sections: true
+bibliography: References.bib
+csl: apa.csl
+link-citations: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+```{css, echo=FALSE}
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 300px;
+}
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r, setup, include=FALSE,echo=FALSE, message=FALSE,warning=FALSE}
+require(knitr)
+# Set so that long lines in R will be wrapped:
+opts_chunk$set(tidy.opts=list(width.cutoff=75),tidy=TRUE)
+#
+rm(list = ls())
 ```
 
-## Including Plots
+I do X things in this R markdown document: 
 
-You can also embed plots, for example:
+  1. 
+  
+  
+# Setup 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+All of the data and scripts are downloadable from the [AztecBOM_CeramicChron github repository](https://github.com/rcesaret/AztecBOM_CeramicChron), which can be downloaded locally as a .zip folder or cloned to your own account.
+
+Either way, once you have done so, you will need to modify the working directory (setwd("C:/...)") path and "dir" variables in the code chunk below to match the repository location on your computer.
+
+```{r, label='Set Local Directory Location', message=FALSE,warning=FALSE}
+
+wd <- list()
+
+#SET YOUR LOCAL DIRECTORY LOCATION HERE:
+#wd$dir <- "C:/Users/rcesaret/Dropbox (ASU)/CeramicChronBOM/AztecBOM_CeramicChron/"
+wd$dir <- "C:/Users/TJ McMote/Dropbox (ASU)/CeramicChronBOM/AztecBOM_CeramicChron/"
+
+wd$analysis <- paste0(wd$dir,"analysis/")
+wd$data_r <- paste0(wd$dir,"data-raw/")
+wd$data_p <- paste0(wd$dir,"data-processed/")
+wd$data_f <- paste0(wd$dir,"data-final-outputs/")
+wd$figs <- paste0(wd$dir,"figures/")
+wd$funcs <- paste0(wd$dir,"functions/")
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Load R Packages and Custom Functions
+
+```{r, label='Load Libraries', message=FALSE,warning=FALSE}
+# Package names
+packages <- c("rgdal", "rgeos", "sp", "sf", "GISTools", "raster", "stars", 
+              "tidyverse", "tidyr", "data.table", "ggplot2", "RColorBrewer", 
+              "cowplot", "ggnewscale", "viridis", "ggsn", "caret", "mgcv", 
+              "mgcViz", "gratia", "nnet", "randomForest", "MultivariateRandomForest")
+              
+              #"lwgeom", "scales", "igraph", "tidygraph", "centiserve", "CINNA",
+              #"sfnetworks", "ggplotify", "ggiraphExtra", "modelsummary", "minpack.lm", 
+              #"ggfortify", "zoo", "ggrepel", "ggridges","geodist", "gdistance",  "movecost"
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# load packages
+invisible(lapply(packages, library, character.only = TRUE))
+
+rm(packages,installed_packages)
+
+#Read in custom R functions located in the wd$funcs directory folder
+#FUNCS <- list("", "", "", "", "")
+#invisible(lapply(FUNCS, function(x) source(paste0(wd$funcs,x))))
+#rm(FUNCS)
+
+```
+
+
+
+## Import Data
+
+Data we are importing:
+
+  1. the AggSite polygon data
+  2. A simple polygon calculated in QGIS that specifies a hard outter border for the catchment areas of sites (constructed for sensitivity to survey borders and sites not included in the SBOM sample)
+  3. Cost-distance matrices from script #3
+  4. Least cost path rasters from script #3
+  5. A raster hillshade basemap for the SBOM which includes the lakes
+
+```{r, label='Import Data', message=FALSE,warning=FALSE}
+
+
+#All_AggPoly <- readOGR(paste0(wd$data_p,"SBOM_AggSitePoly6.gpkg"))
+#CD.mats <- readRDS(file=paste0(wd$data_p,"CDmats_list.RData"))
+
+## Hillshade Basemap Raster with lake
+HillshadeLake <- raster(paste0(wd$data_r, "HillshadeLake.tif"))
+HillshadeLake <- rast(HillshadeLake, crs = 26914)
+Hillshade.s <- st_as_stars(HillshadeLake) #for ggplot basemap
+
+HM_Data <- read.csv(paste0(wd$data_r, "HM_7.26.22_Data.csv"))
+HM_Key <- read.csv(paste0(wd$data_r, "HM_7.26.22_Key.csv"))
+ParsTX_Data <- read.csv(paste0(wd$data_r, "ParsonsTX_Data.csv"))
+ParsTX_Key <- read.csv(paste0(wd$data_r, "ParsonsTX_Key.csv"))
+
+```
+
+HM_7.26.22_Data.csv
+
+
+ParsonsTX_Key.csv
+
+# Parsons Texcoco Integration
+
+PARSONS
+--SiteNumVariable for aggregation
+
+Import Parsons + Parsons Key
+Left Join Key to Parsons, reorder
+Filter HM_Incl == FALSE --> separate DF
+Filter HM_Incl == TRUE --> separate DF
+Filter BO --> separate DF
+Filter CCPC --> separate DF
+Filter Red --> separate DF
+
+Import HM + HM Key
+Pivot HM longer
+Left Join Key to HM, reorder
+Filter SurvReg == TX --> separate DF
+Filter BO --> separate DF
+Filter CCPC --> separate DF
+Filter Red --> separate DF
+
+Cases with single samples first
+
+Compare totals
+--overall
+--by type
+--by Parsons_HM_Agg
+
+CorrScatterPlots 
+
+
+Which HM INDIVIDUAL variables predict Parsons categories
+
+We want to
+--Predict HM categories for OLD PARSONS individual COLLECTIONS so that we can disaggregate the HM data by collection
+----
+
+
+
+
+--Predict HM categories for NEW PARSONS COLLECTIONS
+
+Random Forest multiple response vars
+https://www.rdocumentation.org/packages/MultivariateRandomForest/versions/1.1/topics/MultivariateRandomForest
+https://cran.r-project.org/web/packages/MultivariateRandomForest/index.html
+
+nnet::multinom
+https://search.r-project.org/CRAN/refmans/mgcv/html/mvn.html
+https://www.stat.auckland.ac.nz/~yee/VGAM/
+https://cran.r-project.org/web/packages/VGAM/index.html
+https://stackoverflow.com/questions/50242690/using-weights-in-a-multinomial-gam-mgcv
+https://stats.stackexchange.com/questions/438917/nnetmultinom-confidence-intervals-extremely-narrow-when-mean-of-independent-v
+https://stats.stackexchange.com/questions/208090/fitting-a-multinomial-regression-with-multiple-dependent-variables-and-random-fa
+https://stats.stackexchange.com/questions/116051/training-nnet-and-avnnet-models-with-caret-when-the-output-has-negatives?rq=1
+https://stats.stackexchange.com/questions/462248/differences-between-multinomial-models-mgcv-and-nnet
+https://stackoverflow.com/questions/70689404/no-longer-can-use-vglm-for-underdispersed-count-data-in-r
+https://stats.stackexchange.com/questions/67385/what-is-the-appropriate-model-for-underdispersed-count-data/549802#549802
+
+VGAM: Vector Generalized Linear and Additive Models
+An implementation of about 6 major classes of statistical regression models. The central algorithm is Fisher scoring and iterative reweighted least squares. At the heart of this package are the vector generalized linear and additive model (VGLM/VGAM) classes. VGLMs can be loosely thought of as multivariate GLMs. VGAMs are data-driven VGLMs that use smoothing. The book "Vector Generalized Linear and Additive Models: With an Implementation in R" (Yee, 2015) <doi:10.1007/978-1-4939-2818-7> gives details of the statistical framework and the package. Currently only fixed-effects models are implemented. Many (100+) models and distributions are estimated by maximum likelihood estimation (MLE) or penalized MLE. The other classes are RR-VGLMs (reduced-rank VGLMs), quadratic RR-VGLMs, reduced-rank VGAMs, RCIMs (row-column interaction models)—these classes perform constrained and unconstrained quadratic ordination (CQO/UQO) models in ecology, as well as constrained additive ordination (CAO). Hauck-Donner effect detection is implemented. Note that these functions are subject to change; see the NEWS and ChangeLog files for latest changes.
+
+https://cran.r-project.org/web/packages/VGAM/index.html
+Regression and classification: many different supervised methods can accommodate the presence of missing values. randomForest, grf, and StratifiedRF handle missing values in predictors in various random forest based methods
+
+Evidential classifiers quantify the uncertainty about the class of a test pattern using a Dempster-Shafer mass function in package evclass. The OneR (One Rule) package offers a classification algorithm with enhancements for sophisticated handling of missing values and numeric data together with extensive diagnostic functions.
+
+Random Forests : The reference implementation of the random forest algorithm for regression and classification is available in package randomForest. Package ipred has bagging for regression, classification and survival analysis as well as bundling, a combination of multiple models via ensemble learning. In addition, a random forest variant for response variables measured at arbitrary scales based on conditional inference trees is implemented in package party. randomForestSRC implements a unified treatment of Breiman’s random forests for survival, regression and classification problems. Quantile regression forests quantregForest allow to regress quantiles of a numeric response on exploratory variables via a random forest approach. For binary data, The varSelRF and Boruta packages focus on variable selection by means for random forest algorithms. In addition, packages ranger and Rborist offer R interfaces to fast C++ implementations of random forests. Reinforcement Learning Trees, featuring splits in variables which will be important down the tree, are implemented in package RLT. wsrf implements an alternative variable weighting method for variable subspace selection in place of the traditional random variable sampling. Package RGF is an interface to a Python implementation of a procedure called regularized greedy forests. Random forests for parametric models, including forests for the estimation of predictive distributions, are available in packages trtf (predictive transformation forests, possibly under censoring and trunction) and grf (an implementation of generalised random forests).
+
+Recursive Partitioning : Tree-structured models for regression, classification and survival analysis, following the ideas in the CART book, are implemented in rpart (shipped with base R) and tree. Package rpart is recommended for computing CART-like trees. A rich toolbox of partitioning algorithms is available in Weka, package RWeka provides an interface to this implementation, including the J4.8-variant of C4.5 and M5. The Cubist package fits rule-based models (similar to trees) with linear regression models in the terminal leaves, instance-based corrections and boosting. The C50 package can fit C5.0 classification trees, rule-based models, and boosted versions of these.
+Two recursive partitioning algorithms with unbiased variable selection and statistical stopping criterion are implemented in package party and partykit. Function ctree() is based on non-parametric conditional inference procedures for testing independence between response and each input variable whereas mob() can be used to partition parametric models. Extensible tools for visualizing binary trees and node distributions of the response are available in package party and partykit as well.
+Graphical tools for the visualization of trees are available in package maptree.
+Partitioning of mixture models is performed by RPMM.
+Computational infrastructure for representing trees and unified methods for prediction and visualization is implemented in partykit. This infrastructure is used by package evtree to implement evolutionary learning of globally optimal trees. Survival trees are available in various packages.
+
+Trees for subgroup identification with respect to heterogenuous treatment effects are available in packages partykit, model4you, dipm, quint, pkg("SIDES"), pkg("psica"), and pkg("MrSGUIDE") (and probably many more).
+
+Neural Networks and Deep Learning : Single-hidden-layer neural network are implemented in package nnet (shipped with base R). Package RSNNS offers an interface to the Stuttgart Neural Network Simulator (SNNS). Packages implementing deep learning flavours of neural networks include deepnet (feed-forward neural network, restricted Boltzmann machine, deep belief network, stacked autoencoders), RcppDL (denoising autoencoder, stacked denoising autoencoder, restricted Boltzmann machine, deep belief network) and h2o (feed-forward neural network, deep autoencoders). An interface to tensorflow is available in tensorflow. The torch package implements an interface to the libtorch library.
+
+Association Rules : Package arules provides both data structures for efficient handling of sparse binary data as well as interfaces to implementations of Apriori and Eclat for mining frequent itemsets, maximal frequent itemsets, closed frequent itemsets and association rules. Package opusminer provides an interface to the OPUS Miner algorithm (implemented in C++) for finding the key associations in transaction data efficiently, in the form of self-sufficient itemsets, using either leverage or lift.
+
+Fuzzy Rule-based Systems : Package frbs implements a host of standard methods for learning fuzzy rule-based systems from data for regression and classification. Package RoughSets provides comprehensive implementations of the rough set theory (RST) and the fuzzy rough set theory (FRST) in a single package.
+
+
+Data
+--priors csv
+--BOM_Survey_Regions_Polygons <- readOGR('SurveyRegions')
+--GC_Key.csv"
+--GC_Data.long_modHM.csv
+--C14_Binary.csv ERRATA SEE BELOW
+--C14_Assemb.csv ERRATA SEE BELOW
+--FullDataPoster_4.13.22.csv
+--FullDataPoster_4.10.22.csv
+--HMData_MASTER_4.5.22 WHERE IS IT???
+--INAA data
+--Radiocarbon dates
+
+
+INTEGRATED DATABASE
+
+--Put data into long form -- database form
+
+VARIABLES
+
+ID (make after integration)
+
+Source
+Orig_Class_Sys
+Orig_Class == full description from
+
+
+BOMSurv_Complex == ET, LT, AzI, EA, LA, VLA, AZ, Import, Unknown, PlainUnk
+Subcomplex == ET, ET_LT, ET_Maz, LT, Maz, Tol, AzI, AzI_EA, EA_LA, LA, LA_VLA, VLA, AZ, Import
+
+Artifact
+Ware
+Type
+Form
+Subform
+
+
+
+
+
+
+
+Site (name)
+SurvReg (BOM Survey Region)
+Long
+Lat
+East
+North
+Type
+Strat
+SiteNum
+Table
+LocNum
+Unit
+LevNum
+Level
+Context
+Assemb
+Site.s
+Context.s
+CeramicType
+GCNum
+
+
+
+--each entry (a count of ceramics for a single collection[survey site]) gets multiple classification columns
+----one for each ontology
+
+Orig_Class_Sys
+HodgeMinc
+Parsons
+SurveyAbrv (when types)
+GarciaChavez
+...
+
+s
+
+
+--save database as RDS and csv "CeramicTypeData_7.26.22"
+
+
+Dicuss database: 
+--table of sources and their content
+--hierarchical classification system
+
+
+
+
+
+
+
+write.csv(data.map, "data.map.csv")
+
+write.csv(data.map.agg, "data.map.agg2.csv")
+
+
+
+
+```{r}
+
+setwd("C:/Users/TJ McMote/Dropbox (ASU)/CeramicChronBOM")
+
+C14_Binary <- read.csv("C14_Binary.csv")
+C14_Assemb <- read.csv("C14_Assemb.csv")
+
+C14_Chalco = C14_Binary %>% filter(AggSite == "Chalco")%>% dplyr::select(c(1:24))
+rownames(C14_Chalco) <- C14_Chalco$Assemb
+C14_Chalco[nrow(C14_Chalco) + 1,] <- NA
+
+
+C14_Chalco[10:11,1] <- "Chal3_5"
+C14_Chalco[12:13,1] <- "Chal65B_9"
+C14_Chalco[14:15,1] <- "Chal65B_13"
+C14_Chalco[16:17,1] <- "Chal65B_14"
+C14_Chalco = left_join(C14_Chalco, Chalco.prc.data, by="Assemb")
+C14_Chalco$cc <- 'intcal20'
+C14_Chalco[18,1] ="CH185"
+C14_Chalco[18,2] ="CH-AZ-185"
+C14_Chalco[18,3] ="CH185"
+  C14_Chalco[18,4] ="CH"
+  C14_Chalco[18,5] ="Southeast"
+  C14_Chalco[18,6] ="1"
+  C14_Chalco[18,7:8] ="CH185 AzIV Est."
+  C14_Chalco[18,9] =350
+  C14_Chalco[18,10] =50
+  C14_Chalco[18,28] =28.11854
+  C14_Chalco[18,34:36] =0
+  C14_Chalco[18,37] ="normal"
+C14_Chalco$thickness = 100
+C14_Chalco$position <- C14_Chalco$time.depth *1000
+  ordz = order(C14_Chalco$position)
+  C14_Chalco = C14_Chalco[ordz,]
+  
+  C14_Chalco2 = C14_Chalco[-c(1,18),]
+   C14_Chalco2 = left_join(C14_Chalco2, Chalco.prc.data2, by="Assemb")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
