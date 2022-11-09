@@ -66,7 +66,7 @@ wd$funcs <- paste0(wd$dir,"functions/")
 
 ```{r, label='Load Libraries', message=FALSE,warning=FALSE}
 # Package names
-packages <- c("rgdal", "rgeos", "sp", "sf", "GISTools", "raster", "stars", 
+packages <- c("rgdal", "rgeos", "sp", "sf", "GISTools", "raster", "stars", "terra"
               "tidyverse", "tidyr", "data.table", "ggplot2", "RColorBrewer", 
               "cowplot", "ggnewscale", "viridis", "ggsn", "caret", "mgcv", 
               "mgcViz", "gratia", "nnet", "randomForest", "MultivariateRandomForest")
@@ -90,6 +90,13 @@ rm(packages,installed_packages)
 #FUNCS <- list("", "", "", "", "")
 #invisible(lapply(FUNCS, function(x) source(paste0(wd$funcs,x))))
 #rm(FUNCS)
+
+library(devtools)
+
+
+#install.packages("C:/Users/TJ McMote/Dropbox (ASU)/CeramicChronBOM/AztecBOM_CeramicChron/VGAM_1.1-3.tar.gz", repos = NULL, type = "source")
+
+library(VGAM)
 
 ```
 
@@ -121,8 +128,240 @@ HM_Key <- read.csv(paste0(wd$data_r, "HM_7.26.22_Key.csv"))
 ParsTX_Data <- read.csv(paste0(wd$data_r, "ParsonsTX_Data.csv"))
 ParsTX_Key <- read.csv(paste0(wd$data_r, "ParsonsTX_Key.csv"))
 
+ParsTX <- ParsTX_Data %>% left_join(ParsTX_Key, by="Pars_Class") %>% 
+            select(SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,
+                   MissingData,NumCollectionsAtSite,Artifact,PlainDec,Ware,
+                   Complex,Type,Subtype,Form,Pars_Subform,Pars_VesselPart,
+                   Pars_Var,HM_Incl,Parsons_HM_Agg, HM_Classes_Par,Pars_Class,
+                   Pars_Count)
+ParsTX_NOT_INCLUDED <- ParsTX %>% filter(HM_Incl == F) 
+ParsTX_Incl <- ParsTX %>% filter(HM_Incl == T)  %>% group_by(SiteNum) %>% 
+                          mutate(Pars_TOTAL = sum(Pars_Count)) %>% ungroup()
+
+ParsTX_Incl_wide <- ParsTX_Incl %>% group_by(SiteNum) %>%
+            mutate(Site = str_c(unique(Site),collapse = ", "),
+                    Provenience = str_c(unique(Provenience),collapse = ", "),
+                    Collections = str_c(unique(Collection),collapse = ", "),
+                   NumCollections = n_distinct(Collection),
+                    TempSite = str_c(unique(TempSite),collapse = ", "),
+                    ProvenienceNum = str_c(unique(ProvenienceNum),collapse = ", "),
+                    MissingData = ifelse(TRUE %in% MissingData, TRUE, FALSE)#, 
+                   #Parsons_HM_Agg= coalesce(Parsons_HM_Agg,Pars_Class),
+                   #TOTAL = sum(Pars_Count)
+                   ) %>% ungroup() %>% 
+            select(-c(Collection,NumCollectionsAtSite:HM_Incl, Parsons_HM_Agg, HM_Classes_Par)) %>%
+                pivot_wider(names_from = Pars_Class, 
+                   values_from = Pars_Count, 
+                   values_fn = sum,
+                names_prefix = "Pars_", 
+                values_fill = 0) 
+
+
+HM_Data_long <- HM_Data %>% pivot_longer(cols=c(BO_AzI_CHA:BRT), names_to = 
+                                  "HM_Class", values_to = "HM_Count", 
+                                  values_drop_na =T) %>% 
+                            filter(HM_Count > 0 ) %>% #| NewOld == "NEW"
+                            left_join(HM_Key, by = "HM_Class") %>% 
+                            select(NUM:Pop_LA,Artifact:SummaryClass,HM_Class,HM_Count) %>%
+                            group_by(SiteNum) %>%
+                            mutate(HM_TOTAL = sum(HM_Count[SummaryClass==F])) %>% 
+                            ungroup() %>% 
+                            select(-TempSite)
+
+HM_Data_wide <- HM_Data_long %>% select(-c(Artifact, PlainDec, Ware, Type, 
+                                           Subtype, Form, HM_Var, HM_Subvar, 
+                                           HM_CalGeo, Complex, SummaryClass)) %>%
+                                 pivot_wider(names_from = HM_Class, 
+                                    values_from = HM_Count, 
+                                    values_fn = sum,
+                                    names_prefix = "HM_", 
+                                    values_fill = 0)
+  
+HM_Data_wide_TX <- HM_Data_wide %>% filter(SurvReg == "TX")
+
+SampSize <- ParsTX_Incl_wide %>% select(SiteNum:NumCollections)
+  
+SampSize <- HM_Data_wide_TX %>% select(NUM:SurvReg,CA_Size1:HM_TOTAL) %>%
+                full_join(SampSize, by="Site")
+
+write.csv(SampSize, paste0(wd$data_p,"TX_SampSizes.csv"))
+
 ```
 
+
+
+
+
+
+
+
+
+
+```{r}
+
+
+ParsTX_BO <- ParsTX_Incl %>% filter(Type == "BO") %>% group_by(SiteNum) %>%
+            mutate(Site = str_c(unique(Site),collapse = ", "),
+                    Provenience = str_c(unique(Provenience),collapse = ", "),
+                    Collection = str_c(unique(Collection),collapse = ", "),
+                   NumCollections = length(unique(Collection)),
+                    TempSite = str_c(unique(TempSite),collapse = ", "),
+                    ProvenienceNum = str_c(unique(ProvenienceNum),collapse = ", "),
+                    MissingData = ifelse(TRUE %in% MissingData, TRUE, FALSE), 
+                   Parsons_HM_Agg= coalesce(Parsons_HM_Agg,Pars_Class),
+                   TOTAL = sum(Pars_Count)) %>% ungroup() %>% 
+            select(-c(NumCollectionsAtSite:HM_Incl, Pars_Class, HM_Classes_Par)) %>%
+                pivot_wider(names_from = Parsons_HM_Agg, 
+                   values_from = Pars_Count, 
+                   values_fn = sum,
+                names_prefix = "Pars_", 
+                values_fill = 0) %>% 
+                rowwise() %>%
+                mutate(TOTAL = sum(c()))
+
+ParsTX_Red <- ParsTX_Incl %>% filter(Ware == "Redware") %>% group_by(SiteNum) %>%
+            mutate(Site = str_c(unique(Site),collapse = ", "),
+                    Provenience = str_c(unique(Provenience),collapse = ", "),
+                    Collection = str_c(unique(Collection),collapse = ", "),
+                   NumCollections = length(unique(Collection)),
+                    TempSite = str_c(unique(TempSite),collapse = ", "),
+                    ProvenienceNum = str_c(unique(ProvenienceNum),collapse = ", "),
+                    MissingData = ifelse(TRUE %in% MissingData, TRUE, FALSE), 
+                   Parsons_HM_Agg= coalesce(Parsons_HM_Agg,Pars_Class),
+                   TOTAL = sum(Pars_Count)) %>% ungroup() %>% 
+            select(-c(NumCollectionsAtSite:HM_Incl, Pars_Class, HM_Classes_Par)) %>%
+                pivot_wider(names_from = Parsons_HM_Agg, 
+                   values_from = Pars_Count, 
+                   values_fn = sum,
+                names_prefix = "Pars_", 
+                values_fill = 0)
+
+ParsTX_PC <- ParsTX_Incl %>% filter(Ware == "Polychrome") %>% group_by(SiteNum) %>%
+            mutate(Site = str_c(unique(Site),collapse = ", "),
+                    Provenience = str_c(unique(Provenience),collapse = ", "),
+                    Collection = str_c(unique(Collection),collapse = ", "),
+                   NumCollections = length(unique(Collection)),
+                    TempSite = str_c(unique(TempSite),collapse = ", "),
+                    ProvenienceNum = str_c(unique(ProvenienceNum),collapse = ", "),
+                    MissingData = ifelse(TRUE %in% MissingData, TRUE, FALSE), 
+                   Parsons_HM_Agg= coalesce(Parsons_HM_Agg,Pars_Class),
+                   TOTAL = sum(Pars_Count)) %>% ungroup() %>% 
+            select(-c(NumCollectionsAtSite:HM_Incl, Pars_Class, HM_Classes_Par)) %>%
+                pivot_wider(names_from = Parsons_HM_Agg, 
+                   values_from = Pars_Count, 
+                   values_fn = sum,
+                names_prefix = "Pars_", 
+                values_fill = 0)
+
+  #pivot_longer(data, -c(ID, att), names_pattern = "(.*)(\\d{1})", names_to = c(".value", "condition"))
+#id_cols = c(SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,
+                  # MissingData),
+  
+ # pivot_wider(id_cols = SiteNum,
+      #          names_from = Pars_Class, values_from = Pars_Count, names_prefix = "Pars_", 
+      #          values_fill = 0, unused_fn = list(date = max))
+
+```
+
+Import HM + HM Key
+Pivot HM longer
+Left Join Key to HM, reorder
+Filter SurvReg == TX --> separate DF
+Filter BO --> separate DF
+Filter CCPC --> separate DF
+Filter Red --> separate DF
+
+```{r}
+#names(HM_Data)[names(HM_Data) == 'Collections'] <- 'NumCollections'
+
+HM_Data_long <- HM_Data %>% pivot_longer(cols=c(BO_AzI_CHA:BRT), names_to = 
+                                  "HM_Class", values_to = "HM_Count", 
+                                  values_drop_na =T) %>% 
+                            filter(HM_Count > 0 | NewOld == "NEW") %>% 
+                            left_join(HM_Key, by = "HM_Class") %>% 
+                            select(NUM:Pop_LA,Artifact:SummaryClass,HM_Class,HM_Count) %>%
+                            group_by(SiteNum) %>%
+                            mutate(HM_TOTAL = sum(HM_Count[SummaryClass==F])) %>% 
+                            ungroup() 
+
+
+
+
+HM_Data_wide <- HM_Data_long %>% select(-c(Artifact, PlainDec, Ware, Type, 
+                                           Subtype, Form, HM_Var, HM_Subvar, 
+                                           HM_CalGeo, Complex)) %>%
+                                 pivot_wider(names_from = HM_Class, 
+                                    values_from = HM_Count, 
+                                    values_fn = sum,
+                                    names_prefix = "HM_", 
+                                    values_fill = 0) #%>% 
+                            
+                            filter(HM_Count > 0) %>% 
+                            left_join(HM_Key, by = "HM_Class") %>% 
+                            mutate() %>% 
+                            select(NUM:Pop_LA,Artifact:Complex,HM_Class,HM_Count)
+
+HM_Data_BO <- HM_Data_long %>%  filter(Type == "BO") %>% 
+                            %>% 
+                            filter(HM_Count > 0) %>% 
+                            left_join(HM_Key, by = "HM_Class") %>% 
+                            select(NUM:Pop_LA,Artifact:Complex,HM_Class,HM_Count)
+
+ParsTX <- ParsTX_Data %>% left_join(ParsTX_Key, by="Pars_Class") %>% 
+            select(SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,
+                   MissingData,NumCollectionsAtSite,Artifact,PlainDec,Ware,
+                   Complex,Type,Subtype,Form,Pars_Subform,Pars_VesselPart,
+                   Pars_Var,HM_Incl,Parsons_HM_Agg, HM_Classes_Par,Pars_Class,
+                   Pars_Count)
+ParsTX_NOT_INCLUDED <- ParsTX %>% filter(HM_Incl == F) 
+ParsTX_Incl <- ParsTX %>% filter(HM_Incl == T) 
+
+ParsTX_BO <- ParsTX_Incl %>% filter(Type == "BO") %>% group_by(SiteNum) %>%
+            mutate(Site = str_c(unique(Site),collapse = ", "),
+                    Provenience = str_c(unique(Provenience),collapse = ", "),
+                    Collection = str_c(unique(Collection),collapse = ", "),
+                   NumCollections = length(unique(Collection)),
+                    TempSite = str_c(unique(TempSite),collapse = ", "),
+                    ProvenienceNum = str_c(unique(ProvenienceNum),collapse = ", "),
+                    MissingData = ifelse(TRUE %in% MissingData, TRUE, FALSE), 
+                   Parsons_HM_Agg= coalesce(Parsons_HM_Agg,Pars_Class) ) %>%
+            ungroup() %>% select(-c(NumCollectionsAtSite:HM_Incl, Pars_Class, HM_Classes_Par)) %>%
+                pivot_wider(names_from = Parsons_HM_Agg, 
+                   values_from = Pars_Count, 
+                   values_fn = sum,
+                names_prefix = "Pars_", 
+                values_fill = 0)
+```
+
+"Pars_BO_AzI" 
+"Pars_BO_PDM_A"       
+"Pars_BO_PDM_B"  
+"Pars_BO_PD_C" 
+"Pars_BO_PDM_IND_EA"
+"Pars_BO_BOWL_A"
+"Pars_BO_BOWL_B"
+"Pars_BO_BOWL_C"
+"Pars_BO_BOWL_IND_EA"
+"Pars_BO_BAS_A" 
+"Pars_BO_BAS_B" 
+"Pars_BO_BAS_C" 
+"Pars_BO_BAS_IND_EA"
+"Pars_BO_PDM_D1D2"  
+"Pars_BO_PDM_D3"
+"Pars_BO_PDM_D" 
+
+      "Pars_BO_PDM_F"       "Pars_BO_PDM_GR"     
+[13] "Pars_BO_PDM_IND"     "Pars_"               "Pars_BO_PDM_IND_LA"       
+[17]               
+[21]             "Pars_BO_BOWL_F"           
+[25]             "Pars_BO_BOWL_IND"    "Pars_BO_BAS_D"      
+[29] "Pars_BO_BAS_IND"     "Pars_BO_BOWL_D"      "Pars_BO_BOWL_G1"     
+[33] "Pars_BO_BOWL_IND_LA"      "Pars_BO_BAS_IND_LA"       
+[37]        "Pars_BO_BAS_F"              
+[41] "Pars_BO_BAS_E"        
+"Pars_BO_BOWL_DE"
+"Pars_BO_BOWL_E" 
+           "Pars_BO_PDM_E"     ""       ""      
 HM_7.26.22_Data.csv
 
 

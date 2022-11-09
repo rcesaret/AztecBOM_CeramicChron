@@ -1,0 +1,247 @@
+---
+title: "Untitled"
+author: "Rudolf Cesaretti"
+date: "2022-07-28"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(readxl)
+
+p <- "C:/Users/TJ McMote/Dropbox (ASU)/BOM Ceramic Data Entry/Old Stuff (Rudy's Metadata)/"
+
+TypeList <- read_excel(paste0(p, "TypeList.xlsx"))
+names(TypeList)[names(TypeList) == 'ID'] <- 'Type_ID'
+
+fnam_dat <- c("CARA4","NEW","CARA3","CARA_MASTER","CARA","CARA2","MASTER1",
+              "MASTER2",'JILL',"GABY_MASTER","GABY2","GABY","ALISHA")
+
+dat_lst <- list()
+
+for (i in 1:length(fnam_dat)) {
+  tmp <- read_excel(paste0(p, "TEX_CeramicData_", fnam_dat[i], ".xlsx"))
+  tmp <- tmp[,c(1:11)]
+  tmp$df <- fnam_dat[i]
+  
+  tmp <- tmp %>% left_join(TypeList, by = 'Type_ID')
+  
+  tmp2 <- read_excel(paste0(p, "TEX_Provenience_", fnam_dat[i], ".xlsx"))
+  names(tmp2)[names(tmp2) == 'ID'] <- 'Provenience'
+  
+  tmp <- tmp %>% left_join(tmp2, by = 'Provenience')
+  
+  dat_lst[[i]] <- tmp
+}
+
+names(dat_lst) <- fnam_dat
+  
+
+All <-  do.call(rbind, dat_lst)
+
+AllUnique <- distinct(All, Provenience, Type_ID, VesselPart, .keep_all = TRUE)
+
+AllUniqueTX <- AllUnique %>% filter(Survey == "Texcoco")
+
+write.csv(AllUniqueTX, paste0(wd$data_p,"TX_dat.csv"))
+
+
+xx=setdiff(AllUnique,Cara4)
+#xx=setdiff(AllUnique[,c(7,2,3)],Cara4[,c(7,2,3)])
+```
+NEED TO GO THRU AND INTEGRATE WITH TOLTEC + OBSIDIAN!!
++ ANY AZ/TOL CERAMICS IN CLASSIC + FORM COMPONENTS!!
+
+THE INFORMAL TABULATIONS ON BLANK PAPER ARE AZTEC SHERDS FROM OTHER PHASE SITES
+
+Added sites for Strip II!!
+
+Add to Access DB:
+--Fix Proveniences (Temp site, Final Site)
+----HM Site
+----Collection Incl in HM
+----Site has collections missing in Parsons
+----Parsons collections missing from HM data
+----Toltec final sites, temp sites, collections
+----Notes
+
+
+
+
+
+It appears that Cara integrated the data correctly!
+--the integrated data is only ~10 more rows than her master copy
+
+Missing locations: 
+-- mis-specified Provenience 
+-- our added locations!!
+-- some that lack decorated ceramics
+-- included in the wrong survey strip file
+-- included in non-Aztec collections
+
+
+TX-A-80	[TX-A-25] Tls. 59 
+--1 collection without location # == Loc J
+--"Tl. 9" should be "Tl. 59"
+
+TX-A-49	[TX-A-51] Tl. 1A
+--Says Tl. 1 on form, not 1A
+
+UNRECORDED BY US AND HM:
+
+TX-T-24		TX-LT-25	Loc. 5 
+--AZ tabulation at the end of Strip I (2/2)
+--belongs in TX-A-40
+
+TX-F-8		TX-TF-6	Tlatel 463
+--Atop cerro Tepetlaoxtoc, no AZ site designated
+--between AZ-A-24 and AZ-A-25
+
+
+MISPLACED IN HODGE & MINC:
+
+Strip I: Tl.375
+--HM place Tl. 375 in TX-A-25 [TX-A-32]
+--However, Tl. 375 is actually in TX-A-40 [TX-A-25]
+--they mixed up the final and temp site numbers
+
+[TX-A-3] Loc. 7 + Tl. 4
+--HM think this is TX-A-46 [TX-A-3] (Strip II)
+--there is no Loc.7 here (there is a Tl. 4)
+--However, Mary Parsons tabulates both a Loc. 7 and Tl. 4 for TX-A-109 [TX-A-3] (Strip III)
+--There is NO Loc 7 in Strip II!
+--There is a Tl. 4 in TX-A-110 [TX-A-1] TX-LT-54 [TX-T-2] (Strip III) according to Mary Parsons tabulation sheets
+--there is not a Tl. 4 here on the map but there is a huge Loc. 4 (with separate tabulation sheets)
+--However, Strip II TX-A-3 also overlaps TX-T-2!!!
+--in the 1967 Ceramic Reanalysis of Texcoco, Tl.4 is attributed to
+"TX-A-3-b" without Survey strip -- already been mixed up!
+----Parsons says it has Aztec III ceramics
+--Loc.7 is def in Strip III Chimalhuacan
+--Tl.4 could be either!!
+
+
+Strip II: Tls. 51 + 53
+--HM placed in Huexotla TX-A-87 [TX-A-10]
+--They belong in Coatlichan TX-A-88 [TX-A-12]
+
+MISPLACED IN PARSONS data
+
+Tls. ("Samples") #370, 372, 375; Loc. 9; Tls. 388, 390
+--Attributed to TX-A-80 [TX-A-25]
+--Actually belong in TX-A-40 [TX-A-25]
+--Rudy/RAs mixed up the survey strip somehow even tho in PDF #2
+--Hodge & Minc misplaced Tl. 375 in TX-A-25 [TX-A-32] (see above)
+
+TX-A-56 [TX-A-11], Tl. 17
+--needs to go with Texcoco samples
+--in SW corner of Texcoco
+
+TX-A-58 [TX-A-23] Loc. A
+--not in HM
+--could be TX-A-61	[TX-A-16] Loc. AA missing in Parsons
+
+MISSING IN PARSONS BUT PRESENT IN HODGE & MINC:
+
+## STRIP I ##
+
+TX-A-3 [TX-A-3] Tls. 2 + 4 == No tabulations!! Only Tl. 3 recorded
+-- TX-A-3 == TX-LT-2 [TX-T-2 & TX-T-2b] == recorded "No Aztec"
+-- Aztec component apparently not tabulated by Parsons; tabulated by Hodge
+
+Aztec Tepetlaoxtoc TX-A-24 [TX-A-22] AND [TX-A-27] AND [TX-T-8; TX-T-21; TX-T-26]
+RECORDED (WE HAVE THEM):
+--[TX-A-22] Loc. 8, Tl. 412, Tl. 445, Tl. 452, Tl. 461
+UNTABULATED bc only Toltec component recorded [TX-T-21; TX-T-26]
+--Tls. 132, 157, 161, 163, 176; Loc. 6; Area E
+TOTALLY MISSING: Tls. 92, 196, 215, 271, 303, 305, 339, 345-346
+
+TX-A-34 [TX-A-38] Tl. 771 WE HAVE!! == 
+--misrecorded as TX-A-75 [TX-A-38], JRP 1967, Sample #771
+
+TX-A-38 [TX-A-33] Tls. 511+515 are at Formative temp site TX-F-7 == TX-TF-11, Strip I (2/2)
+-- Aztec component apparently not tabulated by Parsons; tabulated by Hodge
+
+HM place Tl. 375 in TX-A-25 [TX-A-32]
+
+## STRIP II ##
+
+TX-A-42	[TX-A-54] Tl. 2
+--WAY far west in Strip II
+--Off the map
+--"Kirkby's lakebed collection in area of TX-A-54 and TX-A-55 looks like mostly Late Toltec" from Parsons' 1967 Texcoco Reanalysis (p.43)
+--could be misspecified??
+
+TX-A-43	[TX-A-55] Tl. 1
+--Recorded in HM BUT lacks any sherds!! All Zeros!!
+--"Kirkby's lakebed collection in area of TX-A-54 and TX-A-55 looks like mostly Late Toltec" from Parsons' 1967 Texcoco Reanalysis (p.43)
+
+TX-A-57 [TX-A-17] Loc. F
+--only collection at site not included in Parsons
+--possibly mixed up with TX-A-84 [TX-A-27] Loc. F??
+
+TX-A-61	[TX-A-16] Loc. AA
+--not on map
+--could be TX-A-58 [TX-A-23] Loc. A missing in HM 
+--not too far away
+--However, there is a Loc BB on the map very closeby
+
+TX-A-76	[TX-A-32] Tl. 136
+--not in Parsons
+
+TX-A-78 [TX-A-33] 1 collection wilhout location #
+--not in Parsons
+
+## STRIP III ##
+
+Chimalhuacan TX-A-109 [TX-A-3]
+MISSING IN PARSONS: Areas C; Locs. 1, 12; 1 collection without location #
+--Sample Area C == Serpent site, Chimalhuacan (Has Toltec/Form tabs)
+---Parsons [TX-A-3] Area B Strip III has no HM counterpart.. Area B == Area C?? or Area B == 1 collection without location #??
+---Map shows that Serpent site, Chimalhuacan has an Area B
+--Area B for TX-F-3 Strip III (Chimalhuacan) says "Lt-Mod Aztec"
+--Loc. 1 for TX-F-5 (TX-A-3) Strip III says "mixed Aztec, Formative and Toltec (relatively undiagnostic)"
+--Loc. 12 for TX-F-5 (TX-A-3) Strip III says "Formative comp (+ moderate AZ) ... (very badly weathered)"
+
+
+
+Area A, Loc. 10A, Loc. 10B, Loc. 11, Loc. 13, Loc. 17, Loc. 4A, Loc. 4B, Loc. 5, Loc. 9,
+Tl. 10, Tl. 11, Tl. 12, Tl. 16, Tl. 18, Tl. 19, Tl. 2, Tl. 20, Tl. 21, Tl. 22, Tl. 22E, Tl. 23, Tl. 32, Tl. 34, Tl. 39, Tl. 46, Tl. 47, Tl. 49, Tl. 53, Tl. 57, Tl. 58, Tl. 62, Tl. 66, Tl. 7, Tl. 77, Tl. 8A, Tl. 8B, Tl. 9, Tl. 9B
+
+ Tl. 1, Tl. 4, Loc. 7,
+
+
+
+IN PARSONS TABULATIONS BUT NOT HODGE MINC
+
+## STRIP I ##
+
+TX-A-10 [TX-A-8], Sample #6-E + Sample #6-W
+--separated because part of TX-LT-57 [TX-T-4] == these are AZ sherds from the toltec sample
+--POSSIBLY included in Hodge and Minc tabulations
+
+TX-A-17 [TX-A-18], MHP 1967, Sample #25-26
+--missing from Hodge Minc
+--Temp site is actually [TX-A-12]
+--SHOULD NOT BE TX-A-17!!! 
+--No final site designated; [TX-A-12] is in western outskirts of Tepetitlan; far from TX-A-17
+
+TX-A-17 [TX-A-18], MHP 1967, Tl. 29 missing in Hodge+Minc
+--Tl. 29 included in Toltec sample
+--Tl. 29 should be included in TX-A-17; there is a chance that Tl. 28 and 29 are mixed up
+--there is a chance that Tl. 28 and 29 are mixed up; 
+----Tl. 29 IS in TX-A-17
+----Tl. 28 not in any site; 100 meters from TX-A-16
+
+TX-A-21 [TX-A-20] Area A Loc. 1, Area A Loc. 2, Loc. 3, Tls. 51-52
+--Not recorded in Hodge and Minc
+--Clustered together between Tepetitlan and Cerro Azteca
+--Final site is actually TX-A-17
+--Temp site is [TX-A-20] which was split up in final designation
+
+## STRIP II ##
+
+
+
+## STRIP III ##
+
+TX-A-105 [TX-A-8] Loc. 26
+--Not recorded in Hodge and Minc

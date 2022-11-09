@@ -141,38 +141,38 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 9,TX-A-9,"TX-A-9 [TX-A-7], MHP 1967, Tl. 15B-W",Tl. 15B-W,TX-A-7,9,FALSE,3,Ceramic Vessel,Rim,,,Modern,1
 9,TX-A-9,"TX-A-9 [TX-A-7], MHP 1967, Tl. 15B-W",Tl. 15B-W,TX-A-7,9,FALSE,3,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,2
 9,TX-A-9,"TX-A-9 [TX-A-7], MHP 1967, Tl. 15B-W",Tl. 15B-W,TX-A-7,9,FALSE,3,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,A,BO_MOLC_A,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Support,,Slab3,BO_SUP_Slab3,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,2
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,IncurvRim,B,BO_BAS_Incv_B,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,D2,BO_DISH_D2,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,E,BO_DISH_E,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,2
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,E,BO_MOLC_E,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,LA Indet,BO_MOLC_LA_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,B,CCPC_B,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,Indet,CCPC_Indet,2
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,,FabricMarked,1
-10.5,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,A,BO_MOLC_A,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Support,,Slab3,BO_SUP_Slab3,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,2
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-E",Sample #6-E,TX-A-8,259,FALSE,6,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,IncurvRim,B,BO_BAS_Incv_B,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,D2,BO_DISH_D2,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,E,BO_DISH_E,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,2
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,E,BO_MOLC_E,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,LA Indet,BO_MOLC_LA_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,B,CCPC_B,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,Indet,CCPC_Indet,2
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Body,,,FabricMarked,1
+10.5,TX-A-10b,"TX-A-10 [TX-A-8], MHP 1967, Sample #6-W",Sample #6-W,TX-A-8,260,FALSE,6,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
 10,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Tl. 10",Tl. 10,TX-A-8,15,FALSE,6,Ceramic Vessel,Rim,UprightRim,B,BO_BOWL_Upr_B,1
 10,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Tl. 10",Tl. 10,TX-A-8,15,FALSE,6,Ceramic Vessel,Body,UprightRim,F,BO_BOWL_Upr_F,1
 10,TX-A-10,"TX-A-10 [TX-A-8], MHP 1967, Tl. 10",Tl. 10,TX-A-8,15,FALSE,6,Ceramic Vessel,Rim,,E,BO_DISH_E,1
@@ -268,24 +268,24 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 16,TX-A-16,"TX-A-16 [TX-A-21], MHP 1967, Tl. 19",Tl. 19,TX-A-21,18,FALSE,1,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,1
 16,TX-A-16,"TX-A-16 [TX-A-21], MHP 1967, Tl. 19",Tl. 19,TX-A-21,18,FALSE,1,Ceramic Vessel,Rim,,A,BO_DISH_A,1
 16,TX-A-16,"TX-A-16 [TX-A-21], MHP 1967, Tl. 19",Tl. 19,TX-A-21,18,FALSE,1,Ceramic Vessel,Rim,,A,BO_MOLC_A,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,IncurvRim,Indet,BO_BAS_Incv_Indet,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,A,BO_MOLC_A,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,,Colonial,13
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,,Colonial,2
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,,,Direct rim,PO_BOBAS_Direct,0
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,A,PR_BOWL_A,2
-17.1,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,,Unclassified,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,IncurvRim,Indet,BO_BAS_Incv_Indet,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,A,BO_MOLC_A,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,,Colonial,13
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Body,,,Colonial,2
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,,,Direct rim,PO_BOBAS_Direct,0
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,A,PR_BOWL_A,2
+17.1,TX-A-17b,"TX-A-17 [TX-A-18], MHP 1967, Sample #25-26",Sample #25-26,TX-A-12,261,FALSE,,Ceramic Vessel,Rim,,,Unclassified,1
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 28",Tl. 28,TX-A-18,19,FALSE,5,Ceramic Vessel,Body,UprightRim,A,BO_BAS_Upr_A,2
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 28",Tl. 28,TX-A-18,19,FALSE,5,Ceramic Vessel,Body,,A,BO_DISH_A,1
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 28",Tl. 28,TX-A-18,19,FALSE,5,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
@@ -298,19 +298,19 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 28",Tl. 28,TX-A-18,19,FALSE,5,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,1
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 28",Tl. 28,TX-A-18,19,FALSE,5,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 28",Tl. 28,TX-A-18,19,FALSE,5,Ceramic Vessel,Body,,,PR_COPA,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,IncurvRim,D,BO_BOWL_Incv_D,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,UprightRim,A,BO_BOWL_Upr_A,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,D3,BO_DISH_D3,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Indet,BO_PLATE_Indet,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,5
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Other,NonVessel,,,Figurines,2
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Direct rim,PO_BOBAS_Direct,2
-17.2,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,IncurvRim,D,BO_BOWL_Incv_D,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,UprightRim,A,BO_BOWL_Upr_A,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,D3,BO_DISH_D3,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Indet,BO_PLATE_Indet,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,5
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Other,NonVessel,,,Figurines,2
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Body,,Direct rim,PO_BOBAS_Direct,2
+17.2,TX-A-17c,"TX-A-17 [TX-A-18], MHP 1967, Tl. 29",Tl. 29,TX-A-18,262,FALSE,5,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,1
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 30",Tl. 30,TX-A-18,20,FALSE,5,Ceramic Vessel,Rim,,A,BO_DISH_A,2
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 30",Tl. 30,TX-A-18,20,FALSE,5,Ceramic Vessel,Rim,,D1,BO_DISH_D1,1
 17,TX-A-17,"TX-A-17 [TX-A-18], MHP 1967, Tl. 30",Tl. 30,TX-A-18,20,FALSE,5,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
@@ -381,29 +381,29 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 18,TX-A-18,"TX-A-18 [TX-A-11], MHP 1967, Loc. 4",Loc. 4,TX-A-11,23,FALSE,1,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
 18,TX-A-18,"TX-A-18 [TX-A-11], MHP 1967, Loc. 4",Loc. 4,TX-A-11,23,FALSE,1,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
 18,TX-A-18,"TX-A-18 [TX-A-11], MHP 1967, Loc. 4",Loc. 4,TX-A-11,23,FALSE,1,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,3
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_MOLC_LA_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,Slab2,BO_SUP_Slab2,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,Solid conical,BO_SUP_SolCon,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,Strap,,PO_HAND_Strap,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,3
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,2
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,3
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,3
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,Horizontal loop,,PO_HAND_HorizLoop,2
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,2
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Body,,Solid conical,BO_SUP_SolCon,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,2
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_MOLC_LA_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,Slab2,BO_SUP_Slab2,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,,Solid conical,BO_SUP_SolCon,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,Strap,,PO_HAND_Strap,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 1",Area A Loc. 1,TX-A-20,264,FALSE,,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,3
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,2
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,3
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,3
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,Horizontal loop,,PO_HAND_HorizLoop,2
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Area A Loc. 2",Area A Loc. 2,TX-A-20,263,FALSE,,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,2
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Body,,Solid conical,BO_SUP_SolCon,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Loc. 3",Loc. 3,TX-A-20,265,FALSE,,Ceramic Vessel,Body,Vertical loop,,PO_HAND_VertLoop,2
 21,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tl. 43",Tl. 43,TX-A-20,24,FALSE,4,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
 21,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tl. 43",Tl. 43,TX-A-20,24,FALSE,4,Ceramic Vessel,Body,,Slab2,BO_SUP_Slab2,1
 21,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tl. 43",Tl. 43,TX-A-20,24,FALSE,4,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
@@ -472,12 +472,12 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 21,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tl. 88",Tl. 88,TX-A-20,27,FALSE,4,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
 21,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tl. 88",Tl. 88,TX-A-20,27,FALSE,4,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
 21,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tl. 88",Tl. 88,TX-A-20,27,FALSE,4,Ceramic Vessel,Rim,,A,PR_BOWL_A,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,2
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Support,,Slab Plain,BO_SUP_Slab_Plain,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,Horizontal loop,,PO_HAND_HorizLoop,1
-21.5,TX-A-21,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,,B (striped),TF_B,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,2
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Support,,Slab Plain,BO_SUP_Slab_Plain,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,Horizontal loop,,PO_HAND_HorizLoop,1
+21.5,TX-A-21b,"TX-A-21 [TX-A-20], MHP 1967, Tls. 51-52",Tls. 51-52,TX-A-20,266,FALSE,,Ceramic Vessel,Body,,B (striped),TF_B,1
 22,TX-A-22,"TX-A-22 [TX-A-26], MHP 1967, Tl. 85",Tl. 85,TX-A-26,28,FALSE,2,Ceramic Vessel,Rim,IncurvRim,A,BO_BOWL_Incv_A,1
 22,TX-A-22,"TX-A-22 [TX-A-26], MHP 1967, Tl. 85",Tl. 85,TX-A-26,28,FALSE,2,Ceramic Vessel,Rim,IncurvRim,LA Indet,BO_BOWL_Incv_LA_Indet,1
 22,TX-A-22,"TX-A-22 [TX-A-26], MHP 1967, Tl. 85",Tl. 85,TX-A-26,28,FALSE,2,Ceramic Vessel,Rim,UprightRim,LA Indet,BO_BOWL_Upr_LA_Indet,1
@@ -1791,16 +1791,16 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 36,TX-A-36,"TX-A-36 [TX-A-34], MHP 1967, Loc. 13",Loc. 13,TX-A-34,79,FALSE,1,Ceramic Vessel,Rim,,A,PR_BOWL_A,1
 36,TX-A-36,"TX-A-36 [TX-A-34], MHP 1967, Loc. 13",Loc. 13,TX-A-34,79,FALSE,1,Ceramic Vessel,Rim,,C,PR_BOWL_C,3
 36,TX-A-36,"TX-A-36 [TX-A-34], MHP 1967, Loc. 13",Loc. 13,TX-A-34,79,FALSE,1,Ceramic Vessel,Rim,,A (plain),TF_A,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,IncurvRim,E,BO_BOWL_Incv_E,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,IncurvRim,E,BO_BOWL_Incv_E,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Just SW of Tl. 119",Just SW of Tl. 119,TX-A-24,268,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
 40,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 103",Tl. 103,TX-A-24,83,FALSE,8,Ceramic Vessel,Rim,IncurvRim,A,BO_BAS_Incv_A,1
 40,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 103",Tl. 103,TX-A-24,83,FALSE,8,Ceramic Vessel,Body,IncurvRim,EA Indet,BO_BAS_Incv_EA_Indet,1
 40,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 103",Tl. 103,TX-A-24,83,FALSE,8,Ceramic Vessel,Rim,UprightRim,B,BO_BAS_Upr_B,2
@@ -1954,20 +1954,20 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 40,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 115",Tl. 115,TX-A-24,86,FALSE,8,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,7
 40,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 115",Tl. 115,TX-A-24,86,FALSE,8,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
 40,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 115",Tl. 115,TX-A-24,86,FALSE,8,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,3
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,,BR_Burnished_Censers,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,2
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,2
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Body,,Molded,TM,2
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,,CrossHatched,1
-40.1,TX-A-40,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,,BR_Burnished_Censers,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,2
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,2
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 119",Tl. 119,TX-A-24,267,FALSE,,Ceramic Vessel,Body,,Molded,TM,2
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,,CrossHatched,1
+40.1,TX-A-40b,"TX-A-40 [TX-A-24], MHP 1967, Tl. 123",Tl. 123,TX-A-24,269,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
 44,TX-A-44,"TX-A-44 [TX-A-1], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-1,92,FALSE,1,Ceramic Vessel,Rim,IncurvRim,B,BO_BOWL_Incv_B,1
 44,TX-A-44,"TX-A-44 [TX-A-1], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-1,92,FALSE,1,Ceramic Vessel,Rim,,B,BO_DISH_B,1
 44,TX-A-44,"TX-A-44 [TX-A-1], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-1,92,FALSE,1,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,1
@@ -1976,20 +1976,20 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 44,TX-A-44,"TX-A-44 [TX-A-1], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-1,92,FALSE,1,Ceramic Vessel,Body,,Direct rim,PO_BOBAS_Direct,1
 44,TX-A-44,"TX-A-44 [TX-A-1], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-1,92,FALSE,1,Ceramic Vessel,Rim,,Flattened rim,PO_BOBAS_Flatnd,1
 44,TX-A-44,"TX-A-44 [TX-A-1], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-1,92,FALSE,1,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,2
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,4
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,5
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,4
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
-46.5,TX-A-46,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,2
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,4
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,5
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,4
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
+46.5,TX-A-46b,"TX-A-46 [TX-A-3], Tl. 5",Tl. 5,TX-A-3,280,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
 52,TX-A-52,"TX-A-52 [TX-A-4], JRP 1967, Tl. 8",Tl. 8,TX-A-4,97,FALSE,1,Ceramic Vessel,Rim,IncurvRim,B,BO_BAS_Incv_B,1
 52,TX-A-52,"TX-A-52 [TX-A-4], JRP 1967, Tl. 8",Tl. 8,TX-A-4,97,FALSE,1,Ceramic Vessel,Rim,IncurvRim,LA Indet,BO_BAS_Incv_LA_Indet,1
 52,TX-A-52,"TX-A-52 [TX-A-4], JRP 1967, Tl. 8",Tl. 8,TX-A-4,97,FALSE,1,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,2
@@ -2213,45 +2213,45 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 56,TX-A-56,"TX-A-56 [TX-A-11], JRP 1967, Loc. J",Loc. J,TX-A-11,101,FALSE,8,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
 56,TX-A-56,"TX-A-56 [TX-A-11], JRP 1967, Loc. J",Loc. J,TX-A-11,101,FALSE,8,Ceramic Vessel,Rim,,,Unclassified,8
 56,TX-A-56,"TX-A-56 [TX-A-11], JRP 1967, Loc. J",Loc. J,TX-A-11,101,FALSE,8,Ceramic Vessel,Body,,,Unclassified,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,IncurvRim,A,BO_BOWL_Incv_A,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,2
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,3
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,4
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,BO_MOLC_B,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,F,BO_MOLC_F,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D3,BO_PLATE_D3,3
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,2
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Support,,Ring,BO_SUP_Ring,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,2
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,4
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,4
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,2
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,3
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,3
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Unspecified,CL,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,,Colonial,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,,FabricMarked,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,,Toltec_Indet,15
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,,LT,2
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,,PW,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,10
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Wedge rim,PO_BOBAS_Wedge,2
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,4
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,4
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Everted rim",Low neck,PO_OLLA_FlarNk_Ever_Low,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Med neck",PO_OLLA_StrNk_Bev_Wedge_Med,1
-56.5,TX-A-56,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,IncurvRim,A,BO_BOWL_Incv_A,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,2
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,3
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,4
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,BO_MOLC_B,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,F,BO_MOLC_F,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,D3,BO_PLATE_D3,3
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,2
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Support,,Ring,BO_SUP_Ring,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,2
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,4
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,4
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,2
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,3
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,3
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Unspecified,CL,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,,Colonial,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,,FabricMarked,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,,Toltec_Indet,15
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,,LT,2
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Body,,,PW,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,10
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Wedge rim,PO_BOBAS_Wedge,2
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,4
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,4
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Everted rim",Low neck,PO_OLLA_FlarNk_Ever_Low,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Med neck",PO_OLLA_StrNk_Bev_Wedge_Med,1
+56.5,TX-A-56b,"TX-A-56 [TX-A-11], Tl. 17",Tl. 17,TX-A-11,294,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
 56,TX-A-56,"TX-A-56 [TX-A-11], JRP 1967, Tl. 18",Tl. 18,TX-A-11,103,FALSE,8,Ceramic Vessel,Rim,UprightRim,A,BO_BAS_Upr_A,1
 56,TX-A-56,"TX-A-56 [TX-A-11], JRP 1967, Tl. 18",Tl. 18,TX-A-11,103,FALSE,8,Ceramic Vessel,Rim,UprightRim,B,BO_BAS_Upr_B,1
 56,TX-A-56,"TX-A-56 [TX-A-11], JRP 1967, Tl. 18",Tl. 18,TX-A-11,103,FALSE,8,Ceramic Vessel,Body,IncurvRim,A,BO_BOWL_Incv_A,1
@@ -2623,43 +2623,43 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 57,TX-A-57,"TX-A-57 [TX-A-17], JRP 1967, Tl. 70",Tl. 70,TX-A-17,110,FALSE,4,Ceramic Vessel,Rim,,Molded,TM,1
 57,TX-A-57,"TX-A-57 [TX-A-17], JRP 1967, Tl. 70",Tl. 70,TX-A-17,110,FALSE,4,Ceramic Vessel,Rim,,,Unclassified,21
 57,TX-A-57,"TX-A-57 [TX-A-17], JRP 1967, Tl. 70",Tl. 70,TX-A-17,110,FALSE,4,Ceramic Vessel,Body,,,Unclassified,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,0
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,D2,BO_PLATE_D2,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,Indet,BO_PLATE_Indet,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,5
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,I,BR_BOWL_I,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,5
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,9
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,L,BR_BOWL_L,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Other,CL_Other,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,10
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,6
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,8
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,3
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,2
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,4
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,30
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,,PR_COPA,1
-64.5,TX-A-64,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,,Unclassified,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,0
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,D2,BO_PLATE_D2,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,Indet,BO_PLATE_Indet,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,5
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,I,BR_BOWL_I,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,5
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,9
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,L,BR_BOWL_L,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Other,CL_Other,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,10
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,6
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,8
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,3
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,2
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,4
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,30
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,,PR_COPA,1
+64.5,TX-A-64b,"TX-A-64 [TX-A-18], Tl. 76",Tl. 76,TX-A-18,284,FALSE,,Ceramic Vessel,Rim,,,Unclassified,1
 64,TX-A-64,"TX-A-64 [TX-A-13], JRP 1967, Tl. 96",Tl. 96,TX-A-13,120,TRUE,3,Ceramic Vessel,Body,IncurvRim,EA Indet,BO_BOWL_Incv_EA_Indet,1
 64,TX-A-64,"TX-A-64 [TX-A-13], JRP 1967, Tl. 96",Tl. 96,TX-A-13,120,TRUE,3,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
 64,TX-A-64,"TX-A-64 [TX-A-13], JRP 1967, Tl. 96",Tl. 96,TX-A-13,120,TRUE,3,Ceramic Vessel,Rim,,,ET,1
@@ -2897,336 +2897,336 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 80,TX-A-80,"TX-A-80 [TX-A-25], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-25,168,FALSE,8,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
 80,TX-A-80,"TX-A-80 [TX-A-25], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-25,168,FALSE,8,Ceramic Vessel,Rim,,C,PR_BOWL_C,5
 80,TX-A-80,"TX-A-80 [TX-A-25], JRP 1967, [No Collection Area Name]",[No Collection Area Name],TX-A-25,168,FALSE,8,Ceramic Vessel,Rim,,Indet,TF_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,IncurvRim,A,BO_BAS_Incv_A,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,IncurvRim,B,BO_BAS_Incv_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,B,BO_DISH_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,5
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,7
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,E,BO_DISH_E,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,EA Indet,BO_DISH_EA_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,7
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,EA Indet,BO_MOLC_EA_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BO_PLATE_B,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,EA Unattached floors,BO_PLATE_Base_EA,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,13
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,7
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Grooved,PO_COMAL_Groov,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",High neck,PO_OLLA_StrNk_Direct_High,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,UprightRim,B,BO_BOWL_Upr_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,7
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,5
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,EA Indet,BO_DISH_EA_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,11
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D,BO_MOLC_D,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,30
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D3,BO_PLATE_D3,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,E,BO_PLATE_E,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Support,,Slab5,BO_SUP_Slab5,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,B,BWR_BOWL_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,G,BWR_BOWL_G,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,G,BWR_BOWL_G,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,5
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,ET,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,,FabricMarked,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,TF,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,PBWOC,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,LT,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,,LT,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,PBWOC,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Low neck,PO_OLLA_StrNk_Direct_Low,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Everted rim",Indet neck,PO_OLLA_StrNk_Evert_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,IncurvRim,D,BO_BAS_Incv_D,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,A,BO_BAS_Upr_A,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,D,BO_BAS_Upr_D,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,A,BO_BOWL_Upr_A,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,C,BO_DISH_C,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,D3,BO_PLATE_D3,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,C,BR_BOWL_C,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,K,BR_BOWL_K,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,A,BWR_BOWL_A,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,21
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,10
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,,FabricMarked,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,,POI,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,IncurvRim,EA Indet,BO_BAS_Incv_EA_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,8
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,B,BO_DISH_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,EA Indet,BO_DISH_EA_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,EA Indet,BO_DISH_EA_Indet,5
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,C,BR_BOWL_C,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,6
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,12
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,9
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Body,,B (striped),TF_B,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,4
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Rim,,,BRI,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,3
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Body,,,FabricMarked,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,1
-40.2,TX-A-40,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,IncurvRim,A,BO_BAS_Incv_A,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,IncurvRim,B,BO_BAS_Incv_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,B,BO_DISH_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,5
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,7
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,E,BO_DISH_E,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,EA Indet,BO_DISH_EA_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,7
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,EA Indet,BO_MOLC_EA_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BO_PLATE_B,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,EA Unattached floors,BO_PLATE_Base_EA,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,13
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,7
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,,Grooved,PO_COMAL_Groov,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Loc. 9",Loc. 9,TX-A-25,275,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",High neck,PO_OLLA_StrNk_Direct_High,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,UprightRim,B,BO_BOWL_Upr_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,7
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,5
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,EA Indet,BO_DISH_EA_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,11
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D,BO_MOLC_D,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,30
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,D3,BO_PLATE_D3,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,E,BO_PLATE_E,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Support,,Slab5,BO_SUP_Slab5,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,B,BWR_BOWL_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,G,BWR_BOWL_G,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,G,BWR_BOWL_G,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,5
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,ET,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,,FabricMarked,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,TF,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,PBWOC,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,LT,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,,,LT,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,,PBWOC,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Body,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Low neck,PO_OLLA_StrNk_Direct_Low,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #372",Sample # 372,TX-A-25,271,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Everted rim",Indet neck,PO_OLLA_StrNk_Evert_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,IncurvRim,D,BO_BAS_Incv_D,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,A,BO_BAS_Upr_A,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,D,BO_BAS_Upr_D,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,A,BO_BOWL_Upr_A,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,C,BO_DISH_C,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,D3,BO_PLATE_D3,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,C,BR_BOWL_C,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,K,BR_BOWL_K,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,A,BWR_BOWL_A,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,21
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,10
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Body,,,FabricMarked,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,,,POI,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #375",Sample # 375,TX-A-25,272,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,IncurvRim,EA Indet,BO_BAS_Incv_EA_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,8
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,B,BO_DISH_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,EA Indet,BO_DISH_EA_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,EA Indet,BO_DISH_EA_Indet,5
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,C,BR_BOWL_C,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,6
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,12
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,9
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Sample #370",Sample #370,TX-A-25,270,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 388",Tl. 388,TX-A-25,273,FALSE,,Ceramic Vessel,Body,,B (striped),TF_B,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,4
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Rim,,,BRI,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,3
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Body,,,FabricMarked,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,1
+40.2,TX-A-40c,"TX-A-40 [TX-A-25], MHP 1967, Tl. 390",Tl. 390,TX-A-25,274,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
 86,TX-A-86,"TX-A-86 [TX-A-20], JRP 1967, Loc. E",Loc. E,TX-A-20,174,FALSE,3,Ceramic Vessel,Body,IncurvRim,A,BO_BAS_Incv_A,1
 86,TX-A-86,"TX-A-86 [TX-A-20], JRP 1967, Loc. E",Loc. E,TX-A-20,174,FALSE,3,Ceramic Vessel,Body,IncurvRim,B,BO_BAS_Incv_B,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,2
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,3
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,3
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,2
 86,TX-A-86,"TX-A-86 [TX-A-20], JRP 1967, Loc. E",Loc. E,TX-A-20,174,FALSE,3,Ceramic Vessel,Rim,,B,BO_MOLC_B,1
 86,TX-A-86,"TX-A-86 [TX-A-20], JRP 1967, Loc. E",Loc. E,TX-A-20,174,FALSE,3,Ceramic Vessel,Rim,,D,BO_MOLC_D,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,3
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Slab2,BO_SUP_Slab2,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,8
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,2
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,2
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,33
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,2
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,15
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,2
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Handle,Nubbin,,PO_HAND_Nubbin,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim",Square,PO_OLLA_FlarNk_Bev_Square,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",High neck,PO_OLLA_FlarNk_Direct_High,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,4
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",High neck,PO_OLLA_StrNk_Direct_High,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,C,PR_BOWL_C,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Other,NonVessel,,Unspecified,SpndWhorl_U,1
-86.1,TX-A-86,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,NonVessel,,,Unclassified,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,D3,BO_DISH_D3,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,6
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,G,BO_DISH_G,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,H,BO_DISH_H,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,F,BO_MOLC_F,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,D3,BO_PLATE_D3,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,E,BO_PLATE_E,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Support,,Slab4,BO_SUP_Slab4,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,11
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,15
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,18
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,K,BR_BOWL_K,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,BR_COPA,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,16
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,BWYR,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,B,CCPC_B,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Other,NonVessel,,,Figurines,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,LT,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,LT,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,,LT,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,31
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Wedge rim,PO_BOBAS_Wedge,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Bolstered,PO_COMAL_Bolst,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,44
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,PR_BOWL_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,A (plain),TF_A,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Molded,TM,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,Unclassified,8
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,,Unclassified,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,YR,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,6
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Undec floor,BO_MOLC_Base,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Slab4,BO_SUP_Slab4,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,10
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,6
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,K,BR_BOWL_K,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,L,BR_BOWL_L,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,,BR_COPA,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,B,CCPC_B,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,Colonial,13
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,TF,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,LT,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,,LT,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,43
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Flattened rim,PO_BOBAS_Flatnd,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Wedge rim,PO_BOBAS_Wedge,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,43
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",High neck,PO_OLLA_FlarNk_Direct_High,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Everted rim",High neck,PO_OLLA_StrNk_Evert_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,PR_BOWL_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,Unclassified,6
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,8
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,7
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Support,,Slab4,BO_SUP_Slab4,6
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,6
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,18
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,ET,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,FabricMarked,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,,FabricMarked,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,5
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,LT,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,29
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,4
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,31
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",High neck,PO_OLLA_FlarNk_Direct_High,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim",Square,PO_OLLA_StrNk_Bev_Square,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,3
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,A,PR_BOWL_A,1
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,C,PR_BOWL_C,2
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,Unclassified,7
-86.2,TX-A-86,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,,Unclassified,3
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BO_PLATE_Indet,3
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Slab2,BO_SUP_Slab2,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,8
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,33
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,15
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Handle,Nubbin,,PO_HAND_Nubbin,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim",Square,PO_OLLA_FlarNk_Bev_Square,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",High neck,PO_OLLA_FlarNk_Direct_High,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,4
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",High neck,PO_OLLA_StrNk_Direct_High,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,Rim,,C,PR_BOWL_C,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Other,NonVessel,,Unspecified,SpndWhorl_U,1
+86.1,TX-A-86b,"TX-A-86 [TX-A-19], Loc. E",Loc. E,TX-A-19,287,FALSE,,Ceramic Vessel,NonVessel,,,Unclassified,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,D3,BO_DISH_D3,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,6
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,G,BO_DISH_G,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,H,BO_DISH_H,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,F,BO_MOLC_F,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,D3,BO_PLATE_D3,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,E,BO_PLATE_E,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,LA Unattached floors,BO_PLATE_Base_LA,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Support,,Slab4,BO_SUP_Slab4,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,11
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,B,BR_BOWL_B,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,15
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,18
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,K,BR_BOWL_K,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,BR_COPA,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,16
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,BWYR,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,B,CCPC_B,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,Indet,CCPC_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Other,NonVessel,,,Figurines,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,LT,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,LT,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,,LT,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,31
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Wedge rim,PO_BOBAS_Wedge,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Bolstered,PO_COMAL_Bolst,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,44
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Indet,PR_BOWL_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,A (plain),TF_A,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,Molded,TM,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,Unclassified,8
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Body,,,Unclassified,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 34",Tl. 34,TX-A-19,285,FALSE,,Ceramic Vessel,Rim,,,YR,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,D3,BO_DISH_D3,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,6
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Undec floor,BO_MOLC_Base,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Slab2,BO_SUP_Slab2,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Slab4,BO_SUP_Slab4,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,10
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,6
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,K,BR_BOWL_K,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,L,BR_BOWL_L,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,,BR_COPA,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,Indet,BWR_BOWL_Indet,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,B,CCPC_B,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,Colonial,13
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,TF,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,LT,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Body,,,LT,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,43
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Flattened rim,PO_BOBAS_Flatnd,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Incurved rim,PO_BOBAS_Incurv,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Wedge rim,PO_BOBAS_Wedge,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,43
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",High neck,PO_OLLA_FlarNk_Direct_High,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Everted rim",High neck,PO_OLLA_StrNk_Evert_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,B,PR_BOWL_B,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,Indet,PR_BOWL_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 39",Tl. 39,TX-A-19,288,FALSE,,Ceramic Vessel,Rim,,,Unclassified,6
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,D2,BO_DISH_D2,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,8
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,F,BO_DISH_F,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,H,BO_DISH_H,7
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,LA Indet,BO_DISH_LA_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,LA Indet,BO_DISH_LA_Indet,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,Necked-jar Indet,BO_JAR_Necked_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Support,,Slab Indet,BO_SUP_Slab_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Support,,Slab4,BO_SUP_Slab4,6
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,A,BR_BOWL_A,6
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,18
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,Indet,BR_BOWL_Indet,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Indet,CCPC_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,ET,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,FabricMarked,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,,FabricMarked,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Other,NonVessel,,,Figurines,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,5
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,LT,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,29
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,4
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,31
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",High neck,PO_OLLA_FlarNk_Direct_High,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim",Square,PO_OLLA_StrNk_Bev_Square,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","Wedge, Indet",PO_OLLA_StrNk_Bev_Wedge_Indet,3
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,A,PR_BOWL_A,1
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,C,PR_BOWL_C,2
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Rim,,,Unclassified,7
+86.2,TX-A-86c,"TX-A-86 [TX-A-19], Tl. 53",Tl. 53,TX-A-19,286,FALSE,,Ceramic Vessel,Body,,,Unclassified,3
 87,TX-A-87,"TX-A-87 [TX-A-10], JRP 1967, Loc. A",Loc. A,TX-A-10,176,FALSE,23,Ceramic Vessel,Rim,IncurvRim,A,BO_BAS_Incv_A,2
 87,TX-A-87,"TX-A-87 [TX-A-10], JRP 1967, Loc. A",Loc. A,TX-A-10,176,FALSE,23,Ceramic Vessel,Body,IncurvRim,A,BO_BAS_Incv_A,1
 87,TX-A-87,"TX-A-87 [TX-A-10], JRP 1967, Loc. A",Loc. A,TX-A-10,176,FALSE,23,Ceramic Vessel,Rim,IncurvRim,B,BO_BAS_Incv_B,2
@@ -4698,23 +4698,23 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area A",Area A,TX-A-3,212,FALSE,45,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area A",Area A,TX-A-3,212,FALSE,45,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area A",Area A,TX-A-3,212,FALSE,45,Ceramic Vessel,Rim,"Flaring-neck, Beveled rim","A-Type (no overhang), Indet",PO_OLLA_FlarNk_Bev_A_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,IncurvRim,A,BO_BOWL_Incv_A,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,UprightRim,A,BO_BOWL_Upr_A,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,2
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,2
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Body,,D3,BO_DISH_D3,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Body,,H,BO_DISH_H,2
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,E,BO_MOLC_E,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,5
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,6
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,5
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,IncurvRim,A,BO_BOWL_Incv_A,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,UprightRim,A,BO_BOWL_Upr_A,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,UprightRim,C,BO_BOWL_Upr_C,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Body,,D3,BO_DISH_D3,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,E,BO_DISH_E,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Body,,H,BO_DISH_H,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Body,,Indet,BO_DISH_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,E,BO_MOLC_E,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,D2,BO_PLATE_D2,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,5
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,6
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Area B",Area B,TX-A-3,291,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,5
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 10A",Loc. 10A,TX-A-3,219,FALSE,45,Ceramic Vessel,Rim,IncurvRim,EA Indet,BO_BAS_Incv_EA_Indet,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 10A",Loc. 10A,TX-A-3,219,FALSE,45,Ceramic Vessel,Body,IncurvRim,EA Indet,BO_BAS_Incv_EA_Indet,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 10A",Loc. 10A,TX-A-3,219,FALSE,45,Ceramic Vessel,Rim,UprightRim,EA Indet,BO_BAS_Upr_EA_Indet,2
@@ -4928,11 +4928,11 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 5",Loc. 5,TX-A-3,217,TRUE,45,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Indet neck,PO_OLLA_FlarNk_Direct_Indet,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 5",Loc. 5,TX-A-3,217,TRUE,45,Ceramic Vessel,Rim,"Straight-necked, Everted rim",Indet neck,PO_OLLA_StrNk_Evert_Indet,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 5",Loc. 5,TX-A-3,217,TRUE,45,Ceramic Vessel,Rim,,,Unclassified,3
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,A,BO_DISH_A,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,Indet,BR_BOWL_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Loc. 7",Loc. 7,TX-A-3,290,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 9",Loc. 9,TX-A-3,218,TRUE,45,Ceramic Vessel,Rim,IncurvRim,A,BO_BAS_Incv_A,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 9",Loc. 9,TX-A-3,218,TRUE,45,Ceramic Vessel,Body,IncurvRim,A,BO_BAS_Incv_A,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 9",Loc. 9,TX-A-3,218,TRUE,45,Ceramic Vessel,Rim,IncurvRim,B,BO_BAS_Incv_B,1
@@ -4953,27 +4953,27 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 9",Loc. 9,TX-A-3,218,TRUE,45,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 9",Loc. 9,TX-A-3,218,TRUE,45,Ceramic Vessel,Rim,"Straight-necked, Everted rim",Indet neck,PO_OLLA_StrNk_Evert_Indet,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Loc. 9",Loc. 9,TX-A-3,218,TRUE,45,Ceramic Vessel,Rim,,,Unclassified,4
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BAS_Upr_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,UprightRim,D,BO_BOWL_Upr_D,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,2
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,,FabricMarked,5
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,,FabricMarked,32
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,3
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,,BR_BWR_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,,LT,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,3
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,11
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Straight,PO_COMAL_Straight,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,A (plain),TF_A,1
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,,Unclassified,11
-109.5,TX-A-109,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,,,,Unclassified,0
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BAS_Upr_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,UprightRim,D,BO_BOWL_Upr_D,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Indet,BO_DISH_Indet,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,,FabricMarked,5
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,,FabricMarked,32
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,,BR_BWR_Indet,3
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,,BR_BWR_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Body,,,LT,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,6
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,3
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,11
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Incipiently-bev,PO_COMAL_IncipBev,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,Straight,PO_COMAL_Straight,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Handle,Vertical loop,,PO_HAND_VertLoop,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Low neck,PO_OLLA_FlarNk_Direct_Low,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Beveled rim","B-type, Indet",PO_OLLA_StrNk_Bev_B_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,A (plain),TF_A,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,Rim,,,Unclassified,11
+109.5,TX-A-109b,"TX-A-109 [TX-A-2], RH 1967, Tl. 1",Tl. 1,TX-A-2,289,FALSE,,Ceramic Vessel,,,,Unclassified,0
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 10",Tl. 10,TX-A-3,232,FALSE,45,Ceramic Vessel,Rim,,E,BO_DISH_E,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 10",Tl. 10,TX-A-3,232,FALSE,45,Ceramic Vessel,Body,,E,BO_DISH_E,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 10",Tl. 10,TX-A-3,232,FALSE,45,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
@@ -5286,26 +5286,26 @@ SiteNum,Site,Provenience,Collection,TempSite,ProvenienceNum,MissingData,NumColle
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 39",Tl. 39,TX-A-3,245,FALSE,45,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 39",Tl. 39,TX-A-3,245,FALSE,45,Ceramic Vessel,Rim,"Flaring-neck, Direct rim",Med neck,PO_OLLA_FlarNk_Direct_Med,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 39",Tl. 39,TX-A-3,245,FALSE,45,Ceramic Vessel,Rim,"Straight-necked, Direct rim",Indet neck,PO_OLLA_StrNk_Direct_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BAS_Upr_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,AzI,BO_AzI,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BO_MOLC_B,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,4
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,2
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,4
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,12
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,3
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,4
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,2
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Handle,Nubbin,,PO_HAND_Nubbin,1
-109.5,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BAS_Upr_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,UprightRim,Indet,BO_BOWL_Upr_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,AzI,BO_AzI,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BO_DISH_B,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,D2,BO_DISH_D2,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BO_MOLC_B,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Body,,Indet,BO_MOLC_Indet,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,A,BO_PLATE_A,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BO_PLATE_B,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Support,,Solid conical,BO_SUP_SolCon,4
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,A,BWR_BOWL_A,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,B,BWR_BOWL_B,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Indet,BWR_BOWL_Indet,4
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_BOBAS_Direct,12
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Recurved rim,PO_BOBAS_Recurv,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Bev rim,PO_COMAL_Bev,3
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Rim,,Direct rim,PO_COMAL_Direct,4
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Handle,Horizontal loop,,PO_HAND_HorizLoop,2
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Handle,Nubbin,,PO_HAND_Nubbin,1
+109.5,TX-A-109b,"TX-A-109 [TX-A-3], RH 1967, Tl. 4",Tl. 4,TX-A-3,292,FALSE,,Ceramic Vessel,Handle,Strap,,PO_HAND_Strap,1
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 46",Tl. 46,TX-A-3,246,FALSE,45,Ceramic Vessel,Rim,UprightRim,A,BO_BAS_Upr_A,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 46",Tl. 46,TX-A-3,246,FALSE,45,Ceramic Vessel,Rim,UprightRim,A,BO_BAS_Upr_A,2
 109,TX-A-109,"TX-A-109 [TX-A-3], RH 1967, Tl. 46",Tl. 46,TX-A-3,246,FALSE,45,Ceramic Vessel,Rim,UprightRim,Indet,BO_BAS_Upr_Indet,1
