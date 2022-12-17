@@ -1,0 +1,1059 @@
+---
+title: "Untitled"
+author: "Rudolf Cesaretti"
+date: "2022-12-15"
+output: html_document
+---
+
+```{r, setup, include=FALSE,echo=FALSE, message=FALSE,warning=FALSE}
+require(knitr)
+# Set so that long lines in R will be wrapped:
+opts_chunk$set(tidy.opts=list(width.cutoff=75),tidy=TRUE)
+#
+rm(list = ls())
+```
+
+```{r, label='Set Local Directory Location', message=FALSE, warning=FALSE}
+
+wd <- list()
+
+#SET YOUR LOCAL DIRECTORY LOCATION HERE:
+#wd$dir <- "C:/Users/rcesaret/Dropbox (ASU)/TeotihuacanDean/TeotihuacanAMM/"
+wd$dir <- "C:/Users/TJ McMote/Dropbox (ASU)/CeramicChronBOM/AztecBOM_CeramicChron/"
+
+wd$analysis <- paste0(wd$dir,"analysis/")
+wd$data_r <- paste0(wd$dir,"data-raw/")
+wd$data_p <- paste0(wd$dir,"data-processed/")
+wd$data_f <- paste0(wd$dir,"data-final-outputs/")
+wd$figs <- paste0(wd$dir,"figures/")
+wd$funcs <- paste0(wd$dir,"functions/")
+
+```
+
+
+
+
+```{r, label='Load Libraries', message=FALSE,warning=FALSE}
+# Package names
+packages <- c("rgdal", "rgeos", "sp", "sf", "GISTools", "raster","stars", "spatstat",
+              "tidyverse", "tidyr", "brms", "broom", "ggrepel", "data.table", "ggspatial",
+              "MASS", "NSM3", "gridExtra", "ggnewscale", "cowplot", "patchwork",
+              "scales", "viridis", "Cairo", "kableExtra", "vegan", "microbiome", 
+              "Rarefy", "ade4", "adiv", "ape", "phyloregion", "microbiome", "igraph", "vegan")
+
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# load packages
+invisible(lapply(packages, library, character.only = TRUE))
+
+rm(packages,installed_packages)
+
+#Read in custom R functions located in the wd$funcs directory folder
+FUNCS <- list("Rich_Sim.R", "ShanDiversity_Sim.R", "FishDiv_Sim.R", "Rich_Sim_Curv.R")
+invisible(lapply(FUNCS, function(x) source(paste0(wd$funcs,x))))
+rm(FUNCS)
+
+```
+
+```{r echo=FALSE,message=FALSE,warning=FALSE,results = 'hide'}
+
+####  UPLOAD GIS DATA ####
+
+## Maps Always Used:
+
+Hillshade <- raster("C:/Users/TJ McMote/Dropbox (ASU)/PrelimAnalysis/ShadedRelief.tif")
+
+BOM_Survey_Regions_Polygons <- readOGR('C:/Users/TJ McMote/Dropbox (ASU)/PrelimAnalysis/BOM_Survey_Regions_Polygons')
+
+Full_Survey_Map <- readOGR('C:/Users/TJ McMote/Dropbox (ASU)/PrelimAnalysis/Full_Survey_Map')
+
+Survey_Regions_Full.df <- tidy(BOM_Survey_Regions_Polygons)
+setnames(Survey_Regions_Full.df, old = c('long','lat'), new = c('East','North'))
+Survey_Regions_Full.df = Survey_Regions_Full.df %>% filter(id != 6) %>% filter(id != 7) %>% filter(id != 8) %>% filter(id != 9) %>% filter(id != 10)
+
+Hillshade_Full <- crop(Hillshade, Full_Survey_Map)
+
+Hillshade_Full.p <- rasterToPoints(Hillshade_Full)
+Hillshade_Full.df <- data.frame(Hillshade_Full.p)
+names(Hillshade_Full.df) <- c("East", "North", "MAP")
+
+
+
+```
+
+```{r}
+Data <- read.csv("C:/Users/TJ McMote/Dropbox (ASU)/CeramicChronBOM/DataIntegration/HM_7.26.22_Data.csv")
+Key <- read.csv("C:/Users/TJ McMote/Dropbox (ASU)/CeramicChronBOM/DataIntegration/HM_7.26.22_Key.csv")
+
+```
+
+
+```{r}
+Data_long = Data %>% pivot_longer(45:194, names_to = "HM_Class", values_to = "Count", values_drop_na = T) %>% 
+  left_join(Key, by="HM_Class") 
+
+dat = Data_long %>% filter(SummaryClass==F)
+
+dat = dat %>% select(-45:57) %>% pivot_wider(id_cols = 1:44, names_from = HM_Class, values_from = Count,
+  values_fill = 0 )
+
+attr = dat[,c(1:44)]
+rownames(attr) <- dat$Site
+
+x = dat[,c(45:162)]
+rownames(x) <- dat$Site
+```
+## Attribute and Raw Count Data for Creation of Network Matricies
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+HMData_TotalsPercentages <- read.csv(file='C:/Users/TJ McMote/Dropbox (ASU)/PrelimAnalysis/HMData_TotalsPercentages_10.21.21.csv')
+#HMData_TotalsPercentages <- dplyr::filter(HMData_TotalsPercentages, TOTAL == 0)
+HMData_TotalsPercentages <- HMData_TotalsPercentages %>% dplyr::filter(TOTAL != 0)
+rownamez <- HMData_TotalsPercentages$Site
+rownames(HMData_TotalsPercentages) <- rownamez
+
+HMData_Full <- HMData_TotalsPercentages
+HMData_Full_spdf <- HMData_Full
+coordinates(HMData_Full_spdf) <- c("East", "North")
+
+Attr <- HMData_Full %>% dplyr::select(NUM, SiteNum, SITE_ID, East, North, SurvReg, SurvRegNum, N_TX, TX, E_IX_Surrounds, XO_W_IX, CH_XO_IX, CH, CH_AM, Tenango, IX, IX_Surrounds, Confed, Pol_EA_num, Pol_LA_num, Pol_EA, Pol_LA, Collections, CA_Size1, CA_Size2, Occu_EA, Occu_LA, Area_EA, Pop_EA, Area_LA, Pop_LA, EA_TOT, LA_TOT, DIAGN_TOT, NoPeriod_INDET_TOT, TOTAL)
+Attr$NameShort <- paste0(Attr$SurvReg,"-",Attr$SiteNum)
+
+Wares.c <- HMData_Full %>% dplyr::select(BO_TOT, PC_TOT, RED_TOT)
+
+Wares_Period.c <- HMData_Full %>% dplyr::select(BO_EA_TOT, BO_LA_TOT, CCPC_TOT, AZPC_TOT, RED_EA_TOT, RED_LA_TOT)
+
+Types.c <- HMData_Full %>% dplyr::select(BO_AzI_TOT, BO_AzII_TOT, BO_Az3_TOT, BO_AzIII_IV_TOT, CCPC_TOT, AZPC_TOT, BRI_TOT, BR_TOT, BWR_TOT, YR, BWYR, WR, GR, BRT)
+
+Types_Ext.c <- HMData_Full %>% dplyr::select(BO_AzI_TOT, BO_AzII_Calligraphic_TOT, BO_AzII_Geometric_TOT, BO_AzII_NOT_CalGeo_TOT, BO_AzII_III_TOT, BO_AzIII_TOT, BO_AzIII_IV_TOT, BO_NoPeriod_INDET_TOT, CCPC_TOT, AZPC_TOT, BRI_TOT, BWR_EA_TOT, BR_EA_TOT, PR_COPA, YR, BWYR, WR, GR, BRT, BR_C, BR_Late, BWR_Late, BWR_G)
+
+Vars.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_AzI_IND, BO_PDM_A_TOT, BO_PDM_B_TOT, BO_PD_C, BO_BOWL_A_TOT, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_PDM_D_TOT, BO_PDM_E_TOT, BO_PDM_F, BO_PDM_GR, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H, CCPC_A, CCPC_B, CCPC_C, CCPC_D, CCPC_H, CCPC_I, CCPC_J, CCPC_K, AZPC_E, AZPC_F, AZPC_G, AZPC_L, BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW_TOT, BWR_AN_TOT, BWR_B_TOT, BWR_C_TOT, BWR_D_TOT, BWR_E_TOT, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Vars_IND.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_AzI_IND, BO_PDM_A_TOT, BO_PDM_B_TOT, BO_PD_C, BO_BOWL_A_TOT, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_PDM_D_TOT, BO_PDM_E_TOT, BO_PDM_F, BO_PDM_GR, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H, BO_PDM_IND_EA, BO_PDM_IND_LA, BO_BOWL_IND_EA, BO_BOWL_IND_LA, BO_BAS_IND_EA, BO_BAS_IND_LA, BO_PDM_IND, BO_BOWL_IND, BO_BAS_IND, CCPC_A, CCPC_B, CCPC_C, CCPC_D, CCPC_H, CCPC_I, CCPC_J, CCPC_K, AZPC_E, AZPC_F, AZPC_G, AZPC_L, BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW_TOT, BWR_AN_TOT, BWR_B_TOT, BWR_C_TOT, BWR_D_TOT, BWR_E_TOT, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Vars_Red.c <- HMData_Full %>% dplyr::select(BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW_TOT, BWR_AN_TOT, BWR_B_TOT, BWR_C_TOT, BWR_D_TOT, BWR_E_TOT, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Vars_BO.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_AzI_IND, BO_PDM_A_TOT, BO_PDM_B_TOT, BO_PD_C, BO_BOWL_A_TOT, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_PDM_D_TOT, BO_PDM_E_TOT, BO_PDM_F, BO_PDM_GR, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H)
+
+Vars_BO_IND.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_AzI_IND, BO_PDM_A_TOT, BO_PDM_B_TOT, BO_PD_C, BO_BOWL_A_TOT, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_PDM_D_TOT, BO_PDM_E_TOT, BO_PDM_F, BO_PDM_GR, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H, BO_PDM_IND_EA, BO_PDM_IND_LA, BO_BOWL_IND_EA, BO_BOWL_IND_LA, BO_BAS_IND_EA, BO_BAS_IND_LA, BO_PDM_IND, BO_BOWL_IND, BO_BAS_IND)
+
+Vars_PC.c <- HMData_Full %>% dplyr::select(CCPC_A, CCPC_B, CCPC_C, CCPC_D, CCPC_H, CCPC_I, CCPC_J, CCPC_K, AZPC_E, AZPC_F, AZPC_G, AZPC_L)
+
+Subvars.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_PDM_A1c, BO_PDM_A2c, BO_PDM_A3c, BO_PDM_A1g, BO_PDM_A2g, BO_PDM_A3g, BO_PDM_B1, BO_PDM_B2, BO_PD_C, BO_BOWL_A1, BO_BOWL_A2, BO_BOWL_A3, BO_BOWL_A4, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_PDM_D1D2, BO_PDM_D3, BO_PD_D4, BO_PDM_E1, BO_PDM_E2, BO_PDM_E3, BO_PDM_E4, BO_PDM_F, BO_PDM_GR, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H, CCPC_A, CCPC_B, CCPC_C, CCPC_D, CCPC_H, CCPC_I, CCPC_J, CCPC_K, AZPC_E, AZPC_F, AZPC_G, AZPC_L, BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW1, BWR_AW2, BWR_AN1, BWR_AN2, BWR_B1, BWR_B2, BWR_C1, BWR_C2, BWR_D1, BWR_D2, BWR_D3, BWR_E1, BWR_E2, BWR_E3, BWR_E4, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Subvars_IND.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_AzI_IND, BO_PDM_A, BO_PDM_A1, BO_PDM_A2, BO_PDM_A3, BO_PDM_A1c, BO_PDM_A2c, BO_PDM_A3c, BO_PDM_A1g, BO_PDM_A2g, BO_PDM_A3g, BO_PDM_B, BO_PDM_B1, BO_PDM_B2, BO_PD_C, BO_PDM_IND_EA, BO_BOWL_A, BO_BOWL_A1, BO_BOWL_A2, BO_BOWL_A3, BO_BOWL_A4, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BOWL_IND_EA, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_BAS_IND_EA, BO_PD_D, BO_PDM_D1D2, BO_PDM_D3, BO_PD_D4, BO_PDM_E, BO_PDM_E1, BO_PDM_E2, BO_PDM_E3, BO_PDM_E4, BO_PDM_F, BO_PDM_GR, BO_PDM_IND_LA, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BOWL_IND_LA, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H, BO_BAS_IND_LA, BO_PDM_IND, BO_BOWL_IND, BO_BAS_IND, CCPC_A, CCPC_B, CCPC_C, CCPC_D, CCPC_H, CCPC_I, CCPC_J, CCPC_K, AZPC_E, AZPC_F, AZPC_G, AZPC_L, BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW, BWR_AW1, BWR_AW2, BWR_AN, BWR_AN1, BWR_AN2, BWR_B, BWR_B1, BWR_B2, BWR_C, BWR_C1, BWR_C2, BWR_D1, BWR_D2, BWR_D3, BWR_E1, BWR_E2, BWR_E3, BWR_E4, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Subvars_Red.c <- HMData_Full %>% dplyr::select(BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW1, BWR_AW2, BWR_AN1, BWR_AN2, BWR_B1, BWR_B2, BWR_C1, BWR_C2, BWR_D1, BWR_D2, BWR_D3, BWR_E1, BWR_E2, BWR_E3, BWR_E4, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Subvars_Red_IND.c <- HMData_Full %>% dplyr::select(BR_A, BR_B, BR_D, BR_E, BR_F, BR_G, BR_H, BR_I, BR_COPA_D, PR_COPA, BWR_AW, BWR_AW1, BWR_AW2, BWR_AN, BWR_AN1, BWR_AN2, BWR_B, BWR_B1, BWR_B2, BWR_C, BWR_C1, BWR_C2, BWR_D1, BWR_D2, BWR_D3, BWR_E1, BWR_E2, BWR_E3, BWR_E4, BRI_A, BRI_B, BRI_C, BRI_D, BRI_PANEL, BRI_CANE, BR_C, BR_Late, BWR_Late, BWR_G, YR, BWYR, WR, GR, BRT)
+
+Subvars_BO.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_PDM_A1c, BO_PDM_A2c, BO_PDM_A3c, BO_PDM_A1g, BO_PDM_A2g, BO_PDM_A3g, BO_PDM_B1, BO_PDM_B2, BO_PD_C, BO_BOWL_A1, BO_BOWL_A2, BO_BOWL_A3, BO_BOWL_A4, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_PDM_D1D2, BO_PDM_D3, BO_PD_D4, BO_PDM_E1, BO_PDM_E2, BO_PDM_E3, BO_PDM_E4, BO_PDM_F, BO_PDM_GR, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H)
+
+Subvars_BO_IND.c <- HMData_Full %>% dplyr::select(BO_AzI_CHA, BO_AzI_MIX, BO_AzI_CUL, BO_AzI_WST, BO_AzI_IND, BO_PDM_A, BO_PDM_A1, BO_PDM_A2, BO_PDM_A3, BO_PDM_A1c, BO_PDM_A2c, BO_PDM_A3c, BO_PDM_A1g, BO_PDM_A2g, BO_PDM_A3g, BO_PDM_B, BO_PDM_B1, BO_PDM_B2, BO_PD_C, BO_PDM_IND_EA, BO_BOWL_A, BO_BOWL_A1, BO_BOWL_A2, BO_BOWL_A3, BO_BOWL_A4, BO_BOWL_B, BO_BOWL_C, BO_BOWL_G1, BO_BOWL_M, BO_BOWL_IND_EA, BO_BAS_A, BO_BAS_B, BO_BAS_C, BO_BAS_IND_EA, BO_PD_D, BO_PDM_D1D2, BO_PDM_D3, BO_PD_D4, BO_PDM_E, BO_PDM_E1, BO_PDM_E2, BO_PDM_E3, BO_PDM_E4, BO_PDM_F, BO_PDM_GR, BO_PDM_IND_LA, BO_DISH_P, BO_BOWL_D, BO_BOWL_E, BO_BOWL_F, BO_BOWL_G2, BO_BOWL_H, BO_BOWL_IND_LA, BO_BAS_D, BO_BAS_E, BO_BAS_F, BO_BAS_G, BO_BAS_H, BO_BAS_IND_LA, BO_PDM_IND, BO_BOWL_IND, BO_BAS_IND)
+
+
+#List of these counts dataframes
+
+CountDFList <- list(Wares.c, Wares_Period.c, Types.c, Types_Ext.c, Vars.c, Vars_IND.c, Vars_Red.c, Vars_BO.c, Vars_BO_IND.c, Vars_PC.c, Subvars.c, Subvars_IND.c, Subvars_Red.c, Subvars_Red_IND.c, Subvars_BO.c, Subvars_BO_IND.c)
+
+NameDFList <- list("Wares", "Wares_Period", "Types", "Types_Ext", "Vars", "Vars_IND", "Vars_Red", "Vars_BO", "Vars_BO_IND", "Vars_PC", "Subvars", "Subvars_IND", "Subvars_Red", "Subvars_Red_IND", "Subvars_BO", "Subvars_BO_IND")
+
+```
+
+
+
+
+## Statistical Summary of (Cropped) Data by Variable
+
+
+```{r echo=FALSE,message=FALSE,warning=FALSE,results = 'hide' }
+
+#### STATISTICAL SUMMARIES OF DATA BY VARIABLE ####
+
+HMData_DataOnly <- subset(HMData_Full, select = -c(1,3:32))
+
+HMData_DataOnly <- HMData_DataOnly %>% mutate_at(vars(173:547), .funs = funs(round((. * 100),2)))
+
+HMData_DataOnly.m <- melt(HMData_DataOnly, id="Site")
+
+summ <- HMData_DataOnly.m %>% 
+	group_by(variable) %>% filter(value > 0) %>% 
+		summarize(min = min(value), Q1= quantile(value, probs = 0.25), 
+            median = median(value), Q3= quantile(value, probs = 0.75), max = max(value), 
+            mean = mean(value), sd = sd(value),
+			n = n()
+			) %>%
+		mutate_if(is.numeric, round, digits=2) %>%
+		mutate(
+			n_0 = ((nrow(HMData_DataOnly)) - n),
+			n_pct = round((100 * n / (nrow(HMData_DataOnly))),2),
+			n_0_pct = round((100 * n_0 / (nrow(HMData_DataOnly))),2))
+
+pos_x = 489591
+pos_y = 2156030
+
+summ_lab <- summ %>%
+			mutate(
+			   lab = paste0(
+			    "Summary Statistics",
+			    "\nn Sites = ", n,
+			    "\n% Sites = ", n_pct, "%",
+					"\nMin = ", min, "%",
+					"\nQ1 = ", Q1, "%",
+					"\nMedian = ", median, "%",
+					"\nQ3 = ", Q3, "%",
+					"\nMax = ", max, "%",
+					"\nMean = ", mean, "%",
+					"\nsd = ", sd),
+				lab1 = paste0(
+				  "n Sites = ", n,
+				  "\n% Sites = ", n_pct, "%",
+				  "\n",
+				  "\nMean = ", mean, "%",
+				  "\nsd = ", sd),
+				lab2 = paste0(
+				  "Min = ", min, "%",
+					"\nQ1 = ", Q1, "%",
+					"\nMedian = ", median, "%",
+					"\nQ3 = ", Q3, "%",
+					"\nMax = ", max, "%"),
+					position_x=pos_x, position_y=pos_y) %>% 
+			dplyr::select(variable, lab, lab1, lab2, position_x, position_y)
+
+
+```
+
+
+
+
+```{r}
+# Bring up dialog to read in a data file. This program expects the file to have types as columns, sites/units as rows with the first column including
+# the names of each unit. If your file is in some other format you can modify that before running the remaining lines of code.
+#x <- read.csv(file=file.choose(),header=T,row.names=1)
+
+# This function has a number of variables that it calls, many of which have default values. x is simply the data file we read in above, nsim is the 
+# number of simulated datasets you would like the script to produce (1000 by default), by.d indicates the interval of sample sizes you would like to
+# consider when producing random datasets. By default the script produces simulations for every possible sample size between 1 and the maximum. If you 
+# have a huge range of values (i.e., 10,000+) you might want to set the interval higher so that it only simulates every other value, for example. 
+# Finally, q.d is the quantile you would like to display on the plot. By default, the program displays the 80% quantile (confidence interval) 
+# selected by Kintigh in his original study.
+
+Rich_Sim <- function(x, nsim=1000, by.d=1) { # create script and set default values for input
+require(vegan) # this script requires the vegan package
+maxn <- max(rowSums(x))*1.05 # the number of sample sizes considered is set as the maximum observed sample size + 5%
+step.d <- seq(1,maxn,by=by.d) # this step simply creates a sequesnce from 1 to maxn by the interval set using the by.d variable
+prob.d <- colSums(x) # this step produces the pool from which random samples will be drawn by simply summing the values across all units by type (column)
+divlist <- list() # create an empty list for output
+
+for (i in step.d) {divlist[[length(divlist)+1]] <- specnumber(rmultinom(nsim,i,prob.d),MARGIN=2)} 
+mean.d <- rapply(divlist,mean) # this rapply command recursively calculates the mean richness for each sample size in divlist
+sd.d <- rapply(divlist,sd) # this rapply command recursively calculates the standard deviation of richness for each sample size in divlist
+Resid <- data.frame(matrix(NA, nrow = nrow(x), ncol = 1))
+rownames(Resid) <- rownames(x)
+colnames(Resid) <- c("n")
+Resid$n <- rowSums(x)
+Resid$Rich.obs <- specnumber(x,MARGIN=1)
+Resid$Rich.sim.mean <- NA
+Resid$Rich.sim.sd <- NA
+
+for (j in 1:nrow(x)) { #    CountDFList[[i]]
+#n <- Resid[j,1] # Resid$n[j]
+#obs <- Resid[j,2] # Resid$Rich.obs[j]
+Resid$Rich.sim.mean[j] <- ifelse(Resid[j,1] == 0, NA, mean.d[Resid[j,1]])#mean.d[Resid[j,1]] # Resid$n[j]
+Resid$Rich.sim.sd[j] <- ifelse(Resid[j,1] == 0, NA, sd.d[Resid[j,1]]) # Resid$n[j]
+}
+Resid$Rich.resid <- ((Resid$Rich.obs) - (Resid$Rich.sim.mean))
+Resid$Rich.resid.Zsim <- ((Resid$Rich.obs) - (Resid$Rich.sim.mean))/Resid$Rich.sim.sd
+Resid$Rich.resid.Psim <- pnorm(Resid$Rich.obs, mean = Resid$Rich.sim.mean, sd = Resid$Rich.sim.sd, lower.tail = TRUE)
+Resid$Rich.resid.Zobs <- ((Resid$Rich.obs) - (mean(Resid$Rich.obs, na.rm=T)))/sd(Resid$Rich.obs, na.rm=T)
+nm <- deparse(substitute(x))
+assign(paste0("RichSim.",nm,".Resid"), Resid, envir = .GlobalEnv)
+
+#CI <- data.frame(step.d,mean.d,sd.d)
+#colnames(CI) <- c("step.d","mean.d","sd.d")
+#CI$upper0.66 <- CI$mean.d+(CI$sd.d*qnorm((1-0.66)/2))
+#CI$lower0.66 <- CI$mean.d-(CI$sd.d*qnorm((1-0.66)/2))
+#CI$upper0.95 <- CI$mean.d+(CI$sd.d*qnorm((1-0.95)/2))
+#CI$lower0.95 <- CI$mean.d-(CI$sd.d*qnorm((1-0.95)/2))
+
+#assign(paste0("RichSim.",nm,".RarefCurv"), CI, envir = .GlobalEnv)
+}
+
+#Rich_Sim <- function(x, nsim=1000, by.d=1)
+
+Shan_Div_Sim <- function(x, nsim=1000, by.d=1) { # create script and set default values for input
+require(vegan) # this script requires the vegan package
+maxn <- max(rowSums(x))*1.05 # the number of sample sizes considered is set as the maximum observed sample size + 5%
+step.d <- seq(1,maxn,by=by.d) # this step simply creates a sequesnce from 1 to maxn by the interval set using the by.d variable
+prob.d <- colSums(x) # this step produces the pool from which random samples will be drawn by simply summing the values across all units by type (column)
+divlist <- list() # create an empty list for output
+
+for (i in step.d) {divlist[[length(divlist)+1]] <- vegan::diversity(rmultinom(nsim,i,prob.d))} 
+mean.d <- rapply(divlist,mean) # this rapply command recursively calculates the mean richness for each sample size in divlist
+sd.d <- rapply(divlist,sd) # this rapply command recursively calculates the standard deviation of richness for each sample size in divlist
+
+}
+Resid <- Attr[,c("NameShort","East","North","SurvReg","SurvRegNum", "N_TX", "TX", "E_IX_Surrounds", "XO_W_IX", "CH_XO_IX", "CH", "CH_AM", "Tenango", "IX", "IX_Surrounds",  "Occu_EA", "Occu_LA", "Area_EA", "Pop_EA", "Area_LA", "Pop_LA","CA_Size1","CA_Size2", "Collections")]
+
+#colnames(Falpha) <- c("Falpha")
+#  the ?? parameter of Fisher's log-series
+
+```
+
+
+```{r}
+nn = 1000
+
+Rich_Sim_Curv(Vars.c, nsim=nn, by.d=1)
+Rich_Sim_Curv(Subvars.c, nsim=nn, by.d=1)
+Rich_Sim_Curv(Types.c, nsim=nn, by.d=1)
+Rich_Sim_Curv(Wares.c, nsim=nn, by.d=1)
+
+Rich_Sim(Vars.c, nsim=nn, by.d=1)
+Rich_Sim(Subvars.c, nsim=nn, by.d=1)
+Rich_Sim(Types.c, nsim=nn, by.d=1)
+Rich_Sim(Wares.c, nsim=nn, by.d=1)
+
+```
+
+
+
+```{r}
+
+Resids <- list(RichSim.Subvars.c.Resid, RichSim.Vars.c.Resid, RichSim.Types.c.Resid, RichSim.Wares.c.Resid)
+
+RarefCurv <- list(RichSimCurv.Subvars.c.RarefCurv, RichSimCurv.Vars.c.RarefCurv, RichSimCurv.Types.c.RarefCurv, RichSimCurv.Wares.c.RarefCurv)
+
+colorz <- list("sienna3", "steelblue3","chartreuse4","orchid")
+
+fillz <- list("sienna1","steelblue1","chartreuse3", "orchid1")
+
+RegionNames <- list("Subvars","Vars","Types", "Wares")
+
+#For Loop Doesnt Work!!!!!!!
+#for (i in length(Resids)) {
+
+i=1
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+i=2
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+i=3
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+i=4
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+#}
+titnew = "Simulated Rarefaction Curves and 95% C.I.s \n for SW BOM Survey Regions (1000 simulations)"
+plot_grid(RarefSimPlot.Subvars,RarefSimPlot.Vars, RarefSimPlot.Types, RarefSimPlot.Wares, hjust=0)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+```{r}
+nn = 1000
+Vars.c.TX <- Vars.c[1:62,]
+Vars.c.IX <- Vars.c[63:86,]
+Vars.c.CH <- Vars.c[87:207,]
+Vars.c.XO <- Vars.c[208:240,]
+
+Rich_Sim_Curv(Vars.c.TX, nsim=nn, by.d=1)
+Rich_Sim_Curv(Vars.c.IX, nsim=nn, by.d=1)
+Rich_Sim_Curv(Vars.c.CH, nsim=nn, by.d=1)
+Rich_Sim_Curv(Vars.c.XO, nsim=nn, by.d=1)
+
+Rich_Sim(Vars.c.TX, nsim=nn, by.d=1)
+Rich_Sim(Vars.c.IX, nsim=nn, by.d=1)
+Rich_Sim(Vars.c.CH, nsim=nn, by.d=1)
+Rich_Sim(Vars.c.XO, nsim=nn, by.d=1)
+
+
+curv = cbind(RichSimCurv.Vars.c.TX.RarefCurv$step.d,RichSimCurv.Vars.c.TX.RarefCurv$mean.d,RichSimCurv.Vars.c.IX.RarefCurv$mean.d,RichSimCurv.Vars.c.CH.RarefCurv$mean.d,RichSimCurv.Vars.c.XO.RarefCurv$mean.d)
+curv1 = rowMeans(curv[,2:5])
+curv2 = cbind(curv,curv1)
+colnames(curv2) <- c("step.d","TX","IX","CH","XO","All")
+curvy <- as.data.frame(curv2)
+
+RichSim.Vars.c.Resid.Comb <-  rbind(RichSim.Vars.c.TX.Resid, RichSim.Vars.c.IX.Resid, RichSim.Vars.c.CH.Resid, RichSim.Vars.c.XO.Resid)
+RichSim.Vars.c.Resid.Comb$SurvReg <- Attr$SurvReg
+RichSim.Vars.c.Resid.Comb$Label <- Attr$NameShort
+RichSim.Vars.c.Resid.Comb$East <- Attr$East
+RichSim.Vars.c.Resid.Comb$North <- Attr$North
+```
+
+
+```{r}
+
+ggplot() + 
+          geom_point(data=RichSim.Vars.c.Resid.Comb, mapping = aes(x=n, y=Rich.obs,color=SurvReg, fill=SurvReg), 
+                                                       size = 2.5, alpha = 0.6) +
+          scale_fill_manual(values = c("TX"="sienna1", 
+                                   "IX"="steelblue1", 
+                                   "CH"="chartreuse3", 
+                                   "XO"="orchid1"), guide = "none") +
+	        scale_color_manual(name="Survey\nRegion",
+	                      values = c("TX"="sienna3", 
+                                   "IX"="steelblue3", 
+                                   "CH"="chartreuse4", 
+                                   "XO"="orchid")) + 
+          new_scale("color") +
+          geom_line(curvy, mapping = aes(x=step.d, y=TX,colour="TX"), size = 1, alpha=0.5) + 
+          geom_line(curvy, mapping = aes(x=step.d, y=IX,colour="IX"), size = 1, alpha=0.5) + 
+          geom_line(curvy, mapping = aes(x=step.d, y=CH,colour="CH"), size = 1, alpha=0.5) + 
+          geom_line(curvy, mapping = aes(x=step.d, y=XO,colour="XO"), size = 1, alpha=0.5) +
+          geom_line(curvy, mapping = aes(x=step.d, y=All,colour="Avg."), size = 1.3, alpha=0.5,linetype = 2) +
+          #geom_ribbon(CI, mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          #geom_line(CI, mapping = aes(x=step.d, y=upper0.66),colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          #geom_line(CI, mapping = aes(x=step.d, y=lower0.66,colour="66% C.I."), size = 0.8, linetype = 2, alpha=0.5) + 
+          #geom_line(CI, mapping = aes(x=step.d, y=upper0.95),colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          #geom_line(CI, mapping = aes(x=step.d, y=lower0.95,colour="95% C.I."), size = 0.8, linetype = 2, alpha=0.5) +
+          scale_color_manual(name = "Mean Exp.\n Richness", 
+                        values = c("TX"="sienna3", 
+                                   "IX"="steelblue3", 
+                                   "CH"="chartreuse4", 
+                                   "XO"="purple",
+                                   "Avg."="black")) +
+          ggtitle(paste0("Simulated Rarefaction Curves for BOM Survey Regions (",paste(nn)," simulations)")) +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=12, face="bold"), legend.title = element_text(color = "black", face="bold", size = 10), axis.text = element_text(size = 10, color="black"), legend.text = element_text(size=10, face="bold")) 
+```
+
+
+```{r}
+RichSim.Vars.c.TX.Resid <- cbind(RichSim.Vars.c.TX.Resid,Attr[1:62,c("SurvReg","NameShort")])
+RichSim.Vars.c.IX.Resid <- cbind(RichSim.Vars.c.IX.Resid,Attr[63:86,c("SurvReg","NameShort")])
+RichSim.Vars.c.CH.Resid <- cbind(RichSim.Vars.c.CH.Resid,Attr[87:207,c("SurvReg","NameShort")])
+RichSim.Vars.c.XO.Resid <- cbind(RichSim.Vars.c.XO.Resid,Attr[208:240,c("SurvReg","NameShort")])
+
+Resids <- list(RichSim.Vars.c.TX.Resid, RichSim.Vars.c.IX.Resid, RichSim.Vars.c.CH.Resid, RichSim.Vars.c.XO.Resid)
+
+RarefCurv <- list(RichSimCurv.Vars.c.TX.RarefCurv, RichSimCurv.Vars.c.IX.RarefCurv, RichSimCurv.Vars.c.CH.RarefCurv, RichSimCurv.Vars.c.XO.RarefCurv)
+
+colorz <- list("sienna3", "steelblue3","chartreuse4","orchid")
+
+fillz <- list("sienna1","steelblue1","chartreuse3", "orchid1")
+
+RegionNames <- list("Texcoco","Ixtapalapa","Chalco", "Xochimilco")
+
+#For Loop Doesnt Work!!!!!!!
+#for (i in length(Resids)) {
+
+i=1
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+i=2
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+i=3
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+i=4
+  
+temp <- ggplot() + 
+          geom_point(data=Resids[[i]], mapping = aes(x=n, y=Rich.obs), color=colorz[[i]], fill=fillz[[i]],
+                                                       size = 3, alpha = 0.7) +
+          
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=mean.d), size = 1, colour="blue",alpha=0.9) + 
+
+          geom_ribbon(RarefCurv[[i]], mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.66), colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.66), colour="black",size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=upper0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(RarefCurv[[i]], mapping = aes(x=step.d, y=lower0.95), colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          
+          ggtitle(RegionNames[[i]]) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=18, face="bold"), axis.text = element_text(size = 10, color="black"), axis.title.x = element_text(face="bold", size=11), axis.title.y = element_text(face="bold", size=11)) 
+
+assign(paste0("RarefSimPlot.",RegionNames[[i]]), temp, envir = .GlobalEnv)
+
+#}
+titnew = "Simulated Rarefaction Curves and 95% C.I.s \n for SW BOM Survey Regions (1000 simulations)"
+plot_grid(RarefSimPlot.Texcoco,RarefSimPlot.Ixtapalapa, RarefSimPlot.Chalco, RarefSimPlot.Xochimilco, hjust=0)
+
+
+```
+
+
+
+```{r}
+ggplot() + 
+          geom_point(data=Resid, mapping = aes(x=n, y=Rich.obs,color=SurvReg, fill=SurvReg), 
+                                                       size = 2.5, alpha = 0.6) +
+          scale_fill_manual(values = c("TX"="sienna1", 
+                                   "IX"="steelblue1", 
+                                   "CH"="chartreuse3", 
+                                   "XO"="orchid1"), guide = "none") +
+	        scale_color_manual(name="Survey\nRegion",
+	                      values = c("TX"="sienna3", 
+                                   "IX"="steelblue3", 
+                                   "CH"="chartreuse4", 
+                                   "XO"="orchid")) + 
+          new_scale("color") +
+          geom_line(CI, mapping = aes(x=step.d, y=mean.d,colour="Mean Exp.\n Richness"), size = 1, alpha=0.5) + 
+          geom_ribbon(CI, mapping = aes(x=step.d,ymin=lower0.95, ymax=upper0.95), alpha=0.2) +
+          geom_line(CI, mapping = aes(x=step.d, y=upper0.66),colour="black", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(CI, mapping = aes(x=step.d, y=lower0.66,colour="66% C.I."), size = 0.8, linetype = 2, alpha=0.5) + 
+          geom_line(CI, mapping = aes(x=step.d, y=upper0.95),colour="red", size = 0.8, linetype = 2, alpha=0.5) +
+          geom_line(CI, mapping = aes(x=step.d, y=lower0.95,colour="95% C.I."), size = 0.8, linetype = 2, alpha=0.5) +
+          scale_color_manual(name = "Lines", 
+                        values = c("Mean Exp.\n Richness"="blue", 
+                                   "66% C.I."="black", 
+                                   "95% C.I."="red")) +
+          xlab("Sample Size (n)") + ylab("Richness") +
+          ggtitle(paste0("Simulated Rarefaction Curve for BOM Survey Sites (",paste(nsim)," simulations)")) +
+          theme_bw() +
+          theme(plot.title = element_text(hjust = 0.5, size=12, face="bold"), legend.title = element_text(color = "black", face="bold", size = 10), axis.text = element_text(size = 10, color="black"), legend.text = element_text(size=10, face="bold")) 
+
+
+
+
+plot(step.d,mean.d,type='l',col='blue',xlim=c(0,maxn),ylim=c(0,max(vegan::diversity(x))),xlab='Sample Size',ylab='Shannon Diversity',main=paste(nsim,"simulations"))
+# next we add points for the sample size (x axis) against richness (y axis) for the original data
+points(rowSums(x),vegan::diversity(x),pch=16)
+# now we label the points based on the row names of x. The pos command means the text will be placed to the left of the point. This can be changed
+# see ?text for details.
+text(rowSums(x),vegan::diversity(x),labels=rownames(x),pos=2,cex=0.5)
+lines(step.d,mean.d+(sd.d*qnorm((1-0.5)/2)),lty=2,col='green')
+lines(step.d,mean.d-(sd.d*qnorm((1-0.5)/2)),lty=2,col='green')
+lines(step.d,mean.d+(sd.d*qnorm((1-0.75)/2)),lty=2,col='orange')
+lines(step.d,mean.d-(sd.d*qnorm((1-0.75)/2)),lty=2,col='orange')
+lines(step.d,mean.d+(sd.d*qnorm((1-0.95)/2)),lty=2,col='red')
+lines(step.d,mean.d-(sd.d*qnorm((1-0.95)/2)),lty=2,col='red')
+
+legend('bottomright',c('Mean expected Shannon Diversity', '50% Confidence Interval','75% Confidence Interval','95% Confidence Interval'),col=c('blue','green','orange','red'),lty=c(1,2),cex=0.75,box.lwd=0)
+
+
+
+
+
+```
+
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+DivDFList <- list(Types.c, Types_Ext.c, Vars.c, Vars_IND.c, Vars_Red.c, Vars_BO.c, Vars_BO_IND.c, Vars_PC.c, Subvars.c, Subvars_IND.c, Subvars_Red.c, Subvars_Red_IND.c, Subvars_BO.c, Subvars_BO_IND.c)
+DivNameDFList <- list("Types", "Types_Ext", "Vars", "Vars_IND", "Vars_Red", "Vars_BO", "Vars_BO_IND", "Vars_PC", "Subvars", "Subvars_IND", "Subvars_Red", "Subvars_Red_IND", "Subvars_BO", "Subvars_BO_IND")
+#q<- list(Types.div, Types_Ext.div, Vars.div, Vars_IND.div, Vars_Red.div, Vars_BO.div, Vars_BO_IND.div, Vars_PC.div, Subvars.div, Subvars_IND.div, Subvars_Red.div, Subvars_Red_IND.div, Subvars_BO.div, Subvars_BO_IND.div)
+for (i in 1:length(DivDFList)) {
+  
+# Richness
+#Rich <- specnumber(DivDFList[[i]])
+# Function specnumber finds the number of species. With MARGIN = 2, it finds frequencies of species. If groups is given, finds the total number of species in each group (see example on finding one kind of beta diversity with this option).
+  
+yyy <- as.data.frame(t(as.matrix(DivDFList[[i]])))
+Falpha1 <- microbiome::alpha(yyy, index = c("observed", "chao1","diversity_inverse_simpson", "diversity_gini_simpson", "diversity_shannon", "evenness_pielou", "evenness_simpson","evenness_evar","evenness_bulla"))#, "diversity_fisher" 
+
+# Shannon Diversity
+#Shan <- vegan::diversity(DivDFList[[i]])
+
+# Simpson Diversity
+#Simp <- diversity(DivDFList[[i]], index = "simpson")
+
+# Inverse Simpson Diversity
+#InvSimp <- diversity(DivDFList[[i]], index = "invsimpson")
+
+# Gini-Simpson Diversity
+#GS <- (1 - (diversity(DivDFList[[i]], index = "simpson")))
+
+xxx <- as.data.frame(t(as.matrix(DivDFList[[i]])))
+Falpha2 <- microbiome::alpha(xxx, index = c("dominance_dbp", "dominance_dmn", "dominance_absolute", "dominance_relative", "dominance_simpson", "dominance_core_abundance", "dominance_gini" ))
+
+
+zzz <- as.data.frame(t(as.matrix(DivDFList[[i]])))
+Falpha3 <- microbiome::alpha(zzz, index = c( "rarity_log_modulo_skewness", "rarity_low_abundance"))
+
+####Falpha <- Falpha[ , !(names(Falpha) %in% c("", "diversity_shannon"))]
+#colnames(Falpha) <- c("Rich","chao1","dv_fisher","dv_coverage","ev_camargo","ev_pielou","ev_simp","ev_evar","ev_bulla","dom_dbp","dom_dmn","dom_absolute","dom_relative","dom_simp","dom_core_abundance","dom_gini","rarity_log_modulo_skewness","rarity_low_abundance","rarity_rare_abundance")
+
+# Pielou's Evenness Index
+#evenness_pielou <- H/log(specnumber(DivDFList[[i]]))
+
+## The following output dataframes:
+
+# Renyi Diversity
+Ren <- renyi(DivDFList[[i]])
+colnames(Ren) <- c("Ren_0","Ren_0.25","Ren_0.5","Ren_1","Ren_2","Ren_4","Ren_8","Ren_16","Ren_32","Ren_64","Ren_Inf")
+ 
+# Renyi Diversity
+Ts <- tsallis(DivDFList[[i]])
+colnames(Ts) <- c("Ts_0","Ts_0.2","Ts_0.4","Ts_0.6","Ts_0.8","Ts_1","Ts_1.2","Ts_1.4","Ts_1.6","Ts_1.8","Ts_2")
+
+n <- rowSums(DivDFList[[i]])
+
+temp <- cbind(Falpha1,Falpha2,Falpha3,Ren,Ts)#,
+temp2 <- cbind(Attr,n,temp)
+colnames(temp2) <- c("NUM", "SiteNum", "SITE_ID", "East", "North", "SurvReg", "SurvRegNum", "N_TX", "TX", "E_IX_Surrounds", "XO_W_IX", "CH_XO_IX", "CH", "CH_AM", "Tenango", "IX", "IX_Surrounds", "Confed","Pol_EA_num", "Pol_LA_num", "Pol_EA", "Pol_LA", "Collections", "CA_Size1","CA_Size2", "Occu_EA", "Occu_LA", "Area_EA", "Pop_EA", "Area_LA","Pop_LA", "EA_TOT", "LA_TOT", "DIAGN_TOT", "NoPeriod_INDET_TOT", "TOTAL","NameShort","n","observed", "Chao1", "Div_Inv_Simp", "Div_Gini_Simp", "Div_Shan",  "Ev_Pielou", "Ev_Simp", "Ev_evar", "Ev_Bulla", "Dom_dbp", "Dom_dmn", "Dom_absolute", "Dom_relative", "Dom_Simp", "Dom_core_abundance", "Dom_Gini", "Rarity_log_modulo_skewness", "Rarity_low_abundance", "Ren_0", "Ren_0.25", "Ren_0.5", "Ren_1", "Ren_2", "Ren_4", "Ren_8", "Ren_16", "Ren_32", "Ren_64", "Ren_Inf", "Ts_0", "Ts_0.2", "Ts_0.4", "Ts_0.6", "Ts_0.8", "Ts_1", "Ts_1.2", "Ts_1.4", "Ts_1.6", "Ts_1.8", "Ts_2")#"Div_Fisher",
+assign(paste0(DivNameDFList[[i]],".div"), temp2, envir = .GlobalEnv)
+}
+
+
+
+```
+
+
+
+```{r}
+Subvars.div = cbind(Subvars.div,RichSim.Subvars.c.Resid[,2:8])
+Vars.div = cbind(Vars.div,RichSim.Vars.c.Resid[,2:8])
+Types.div = cbind(Types.div,RichSim.Types.c.Resid[,2:8])
+
+Subvars.div$Rich.resid.Zobs_pos <- scales::rescale(Subvars.div$Rich.resid.Zobs, to = c(1, 2))
+Vars.div$Rich.resid.Zobs_pos <- scales::rescale(Vars.div$Rich.resid.Zobs, to = c(1, 2))
+Types.div$Rich.resid.Zobs_pos <- scales::rescale(Types.div$Rich.resid.Zobs, to = c(1, 2))
+
+
+```
+
+
+
+```{r}
+
+
+#y = Subvars.div
+z = na.omit(Subvars.div[,c("Div_Inv_Simp", "Pop_LA")])
+z = z %>% filter(Pop_LA > 0)
+#z[,1] = log(z[,1])
+#z[,2] = log(z[,2])
+#z = y[complete.cases(y[])]
+model = lm(Div_Inv_Simp ~ Pop_LA, z)
+summary(model)
+```
+
+
+
+```{r echo=FALSE,message=FALSE,warning=FALSE}
+
+#f3b <- 
+ggplot(data = z, aes(x = Pop_LA, y = Div_Inv_Simp)) +
+  geom_point( size=1, color="black", shape=16, stroke =1)+
+  geom_smooth(method = "lm", formula = y ~ x, size = 1)#+
+  #geom_line(data = predict_f3b, aes(x=MedRingDist, y=Popdens_BuiltUp.p), inetype = "solid", color="firebrick", size=1.3) +
+   #geom_point(data = TeoRings, aes(x = MedRingDist, y = Popdens_BuiltUp, xmin = MinRingDist, xmax = MaxRingDist, label=Ring), size=2.5, color="black", shape=16, stroke =2)+
+  #geom_errorbarh(data = TeoRings, aes(x = MedRingDist, y = Popdens_BuiltUp, xmin = MinRingDist, xmax = MaxRingDist, label=Ring),height=1.5, size=1) +
+  #annotate("label", x = 3000, y = 70, label = "atop(bold(italic(PopDens) == 131.8 * italic(e) ^ (-0.00064 * ~italic(Dist))),bold(italic(R^2) == 0.978 ~~~~~~ italic(n) == 8 ))", parse = TRUE, color ="black", size=5)+
+  #annotate("label", x = 3000, y = 60, label = "Population Density", color ="firebrick", size=5)+
+  #xlab("LA Pop") +
+  #ylab("Rich.resid.Zobs_pos") +
+  #theme_bw() +
+  #scale_y_continuous(expand = c(0, 0), limits=c(0,85), breaks=seq(10,70,20)) +
+  #scale_x_continuous(expand = c(0, 0), limits=c(-20,4600),breaks=seq(0,4000,1000),
+                     #labels=function(x)x/1000) +
+  #theme(plot.title = element_text(size = 14, face = "bold",hjust = 0.5)) +
+  #theme(plot.subtitle = element_text(size = 12, face = "bold.italic",hjust = 0.5)) +
+  #theme(axis.text = element_text(size = 14, color="black")) +
+  #theme(axis.title.y = element_text(size = 16, face = "bold")) +
+  #theme(axis.title.x = element_text(size = 16, face = "bold"))
+#f3b
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r fig1, fig.height = 11, fig.width = 10, echo=FALSE,message=FALSE,warning=FALSE}
+
+bb1 <- c(20,100,500,1000) # define breaks.
+bb2 <- c(min(RichSim.Vars.c.Resid.Comb$Rich.resid.Zobs), 0,max(RichSim.Vars.c.Resid.Comb$Rich.resid.Zobs)) # define breaks.
+ll <- c("-1.2","0","4.7") # labels.
+
+
+Map <- ggplot() +
+      geom_raster(data=Hillshade_Full.df, aes(x = East, y = North, fill = MAP)) +
+      scale_fill_gradientn(colours = c("turquoise", "black", "white"), values = scales::rescale(c(-9999, -161, 254)), guide=FALSE) + 
+      
+	  
+      geom_polygon(data= Survey_Regions_Full.df, aes(x=East, y=North, group=group), colour="black", size =1.0, fill=NA) +
+	  
+	  #######################
+      new_scale("fill") +
+geom_point(data = RichSim.Vars.c.Resid.Comb, aes(x=East, y=North, size=n, fill = Rich.resid.Zobs), colour="black", shape = 21, stroke = 1.25, alpha=0.8 ) +
+      scale_size(name = "Sample Size (n)                  ", range = c(2, 27), breaks = bb1) +
+      scale_fill_gradientn(name="Z-Score Resid Richness",colours = c("blue", "white", "red2"), values = scales::rescale(c(min(RichSim.Vars.c.Resid.Comb$Rich.resid.Zobs), 0,max(RichSim.Vars.c.Resid.Comb$Rich.resid.Zobs))), breaks = bb2, labels = ll) + 
+	  #######################
+	  
+      #annotate("text", x = 534700, y = 2165500, label = summ_lab[summ_lab$variable == "Pct_ofTOT_AzI_CHA",]$lab1, face="bold", size = 4, hjust = 0) + ###CHANGE!!
+      #annotate("text", x = 546500, y = 2165500, label = summ_lab[summ_lab$variable == "Pct_ofTOT_AzI_CHA",]$lab2, face="bold", size = 4, hjust = 0) + annotate("text", x = 536000, y = 2171500, label = "Summary Statistics", face="bold", size = 5.5, hjust = 0) + ###CHANGE!!
+	  
+	  #geom_text_repel(data=HMData_Full, aes(East, North, label= ifelse(Pct_ofTOT_AzI_CHA==0, "", paste0(SurvReg,"-",SiteNum," (",(round((Pct_ofTOT_AzI_CHA*100),1)),"%)")), segment.size = ifelse(Pct_ofTOT_AzI_CHA==0, 0, 0.75)), size = 3, color = "black", fontface = "bold",box.padding = 0.5, point.padding = 0.5, max.overlaps = Inf, guide=FALSE) + ###CHANGE!!
+
+      #annotation_north_arrow(location = "tl", which_north = "true", height = unit(2.0, "cm"), width = unit(2.0, "cm"), pad_x = unit(0.15, "in"), pad_y = unit(1.3, "in"), style = north_arrow_fancy_orienteering, line_width = 2.5, text_size = 40, text_face = "bold") +
+      #annotation_scale(location = "tl", width_hint = 0.5, pad_x = unit(0.15, "in"), pad_y = unit(0.1, "in"), text_size = 40, text_face = "bold") +
+
+	  #######################
+      labs(title = "   Z-Score Richness Residuals about Rarefaction Curve for Decorative Variants", 
+	  subtitle = "            Hodge & Minc Decorated Ceramic Tabulations for SE BOM Survey Region Sites") + ###CHANGE!!
+	  #######################
+	  
+      theme_void() +
+      theme(plot.title = element_text(hjust = 0.5, vjust = 5, size=20, face="bold"), legend.title = element_text(color = "black", face="bold", size = 18), legend.text = element_text(size=10, face="bold") , legend.justification = "bottom", plot.subtitle=element_text(size=12, hjust=0.5, vjust = 5,face="italic", color="black"), plot.margin = unit(c(1,1,0.5,0), "cm")) +
+      
+	  
+      coord_equal(xlim = c(478300, 530959.4), ylim = c(2106861, 2169877), expand = F, clip='off')
+
+hist <- ggplot() + 
+	geom_histogram(RichSim.Vars.c.Resid.Comb, mapping = aes(x=Rich.resid.Zobs,  
+color = as.factor(SurvReg), fill = as.factor(SurvReg)), alpha=1.0, position = "stack") +   # "stack" "dodge" "identity"
+	scale_fill_manual(name="Survey\nRegion",
+					   values = c("TX"="sienna1", 
+                                   "IX"="steelblue1", 
+                                   "CH"="chartreuse3", 
+                                   "XO"="orchid1")) +
+	scale_color_manual(values = c("TX"="sienna3", 
+                                   "IX"="steelblue3", 
+                                   "CH"="chartreuse4", 
+                                   "XO"="orchid"),	guide = F) +
+  scale_x_continuous(limits = c(-1.2, 4.8)) +
+	scale_y_continuous() +
+	labs(x = "Z-Score Richness Residual", y = "Count") +
+	theme(axis.text = element_text(size = 10, color="black"), axis.title = element_text(size = 10, face="bold"), 
+			legend.position="right", legend.title = element_text(size = 10, color="black", face="bold"), 
+			legend.text = element_text(size = 8, color="black", face="bold"), 
+			legend.box.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+			legend.key.height = unit(4, "mm"),
+			legend.key.width = unit(4, "mm"))
+
+ 
+ Map + 
+  inset_element(
+    hist, 
+    left = unit(6.3, "inches"),
+    bottom = unit(4.2, "inches"), 
+    right = unit(9.65, "inches"), 
+    top = unit(7.75, "inches"), #unit(1, "npc") - unit(55, "mm"),
+    align_to = "full",
+    clip = T
+  )
+
+```
+
+
+
+```{r fig2, fig.height = 11, fig.width = 10, echo=FALSE,message=FALSE,warning=FALSE}
+
+bb1 <- c(20,100,500,1000) # define breaks.
+bb2 <- c(-24,-7,7) # define breaks.
+ll <- c("-24","-7","7") # labels.
+
+
+Map <- ggplot() +
+      geom_raster(data=Hillshade_Full.df, aes(x = East, y = North, fill = MAP)) +
+      scale_fill_gradientn(colours = c("turquoise", "black", "white"), values = scales::rescale(c(-9999, -161, 254)), guide=FALSE) + 
+      
+	  
+      geom_polygon(data= Survey_Regions_Full.df, aes(x=East, y=North, group=group), colour="black", size =1.0, fill=NA) +
+	  
+	  #######################
+      new_scale("fill") +
+geom_point(data = RichSim.Vars.c.Resid.Comb, aes(x=East, y=North, size=n, fill = Rich.resid), colour="black", shape = 21, stroke = 1.25, alpha=0.8 ) +
+      scale_size(name = "Sample Size (n)                  ", range = c(2, 27), breaks = bb1) +
+      scale_fill_gradientn(name="Richness Residual",colours = c("blue", "yellow", "red2"), values = scales::rescale(c(-20,-10,5)), breaks = bb2, labels = ll) + 
+	  #######################
+	  
+      #annotate("text", x = 534700, y = 2165500, label = summ_lab[summ_lab$variable == "Pct_ofTOT_AzI_CHA",]$lab1, face="bold", size = 4, hjust = 0) + ###CHANGE!!
+      #annotate("text", x = 546500, y = 2165500, label = summ_lab[summ_lab$variable == "Pct_ofTOT_AzI_CHA",]$lab2, face="bold", size = 4, hjust = 0) + annotate("text", x = 536000, y = 2171500, label = "Summary Statistics", face="bold", size = 5.5, hjust = 0) + ###CHANGE!!
+	  
+	  #geom_text_repel(data=HMData_Full, aes(East, North, label= ifelse(Pct_ofTOT_AzI_CHA==0, "", paste0(SurvReg,"-",SiteNum," (",(round((Pct_ofTOT_AzI_CHA*100),1)),"%)")), segment.size = ifelse(Pct_ofTOT_AzI_CHA==0, 0, 0.75)), size = 3, color = "black", fontface = "bold",box.padding = 0.5, point.padding = 0.5, max.overlaps = Inf, guide=FALSE) + ###CHANGE!!
+
+      #annotation_north_arrow(location = "tl", which_north = "true", height = unit(2.0, "cm"), width = unit(2.0, "cm"), pad_x = unit(0.15, "in"), pad_y = unit(1.3, "in"), style = north_arrow_fancy_orienteering, line_width = 2.5, text_size = 40, text_face = "bold") +
+      #annotation_scale(location = "tl", width_hint = 0.5, pad_x = unit(0.15, "in"), pad_y = unit(0.1, "in"), text_size = 40, text_face = "bold") +
+
+	  #######################
+      labs(title = "          Richness Residual about about Rarefaction Curve for Decorative Variants", 
+	  subtitle = "            Hodge & Minc Decorated Ceramic Tabulations for SE BOM Survey Region Sites") + ###CHANGE!!
+	  #######################
+	  
+      theme_void() +
+      theme(plot.title = element_text(hjust = 0.5, vjust = 5, size=20, face="bold"), legend.title = element_text(color = "black", face="bold", size = 18), legend.text = element_text(size=10, face="bold") , legend.justification = "bottom", plot.subtitle=element_text(size=12, hjust=0.5, vjust = 5,face="italic", color="black"), plot.margin = unit(c(1,1,0.5,0), "cm")) +
+      
+	  
+      coord_equal(xlim = c(478300, 530959.4), ylim = c(2106861, 2169877), expand = F, clip='off')
+
+hist <- ggplot() + 
+	geom_histogram(RichSim.Vars.c.Resid.Comb, mapping = aes(x=Rich.resid,  
+color = as.factor(SurvReg), fill = as.factor(SurvReg)), alpha=1.0, position = "stack") +   # "stack" "dodge" "identity"
+	scale_fill_manual(name="Survey\nRegion",
+					   values = c("TX"="sienna1", 
+                                   "IX"="steelblue1", 
+                                   "CH"="chartreuse3", 
+                                   "XO"="orchid1")) +
+	scale_color_manual(values = c("TX"="sienna3", 
+                                   "IX"="steelblue3", 
+                                   "CH"="chartreuse4", 
+                                   "XO"="orchid"),	guide = F) +
+  scale_x_continuous() +
+	scale_y_continuous() +
+	labs(x = "Richness Residual", y = "Count") +
+	theme(axis.text = element_text(size = 10, color="black"), axis.title = element_text(size = 10, face="bold"), 
+			legend.position="right", legend.title = element_text(size = 10, color="black", face="bold"), 
+			legend.text = element_text(size = 8, color="black", face="bold"), 
+			legend.box.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+			legend.key.height = unit(4, "mm"),
+			legend.key.width = unit(4, "mm"))
+
+ 
+ Map + 
+  inset_element(
+    hist, 
+    left = unit(6.3, "inches"),
+    bottom = unit(4.2, "inches"), 
+    right = unit(9.65, "inches"), 
+    top = unit(7.75, "inches"), #unit(1, "npc") - unit(55, "mm"),
+    align_to = "full",
+    clip = T
+  )
+
+```
+
+
+
+```{r fig3, fig.height = 11, fig.width = 10, echo=FALSE,message=FALSE,warning=FALSE}
+
+bb1 <- c(20,100,500,1000) # define breaks.
+bb2 <- c(0,32,65) # define breaks.
+ll <- c("0","32","65") # labels.
+
+
+Map <- ggplot() +
+      geom_raster(data=Hillshade_Full.df, aes(x = East, y = North, fill = MAP)) +
+      scale_fill_gradientn(colours = c("turquoise", "black", "white"), values = scales::rescale(c(-9999, -161, 254)), guide=FALSE) + 
+      
+	  
+      geom_polygon(data= Survey_Regions_Full.df, aes(x=East, y=North, group=group), colour="black", size =1.0, fill=NA) +
+	  
+	  #######################
+      new_scale("fill") +
+geom_point(data = RichSim.Vars.c.Resid.Comb, aes(x=East, y=North, size=n, fill = Rich.obs), colour="black", shape = 21, stroke = 1.25, alpha=0.8 ) +
+      scale_size(name = "Sample Size (n)                  ", range = c(2, 27), breaks = bb1) +
+      scale_fill_gradientn(name="Observed Richness",colours = c("blue", "yellow", "red2"), values = scales::rescale(c(0,32,65)), breaks = bb2, labels = ll) + 
+	  #######################
+	  
+      #annotate("text", x = 534700, y = 2165500, label = summ_lab[summ_lab$variable == "Pct_ofTOT_AzI_CHA",]$lab1, face="bold", size = 4, hjust = 0) + ###CHANGE!!
+      #annotate("text", x = 546500, y = 2165500, label = summ_lab[summ_lab$variable == "Pct_ofTOT_AzI_CHA",]$lab2, face="bold", size = 4, hjust = 0) + annotate("text", x = 536000, y = 2171500, label = "Summary Statistics", face="bold", size = 5.5, hjust = 0) + ###CHANGE!!
+	  
+	  #geom_text_repel(data=HMData_Full, aes(East, North, label= ifelse(Pct_ofTOT_AzI_CHA==0, "", paste0(SurvReg,"-",SiteNum," (",(round((Pct_ofTOT_AzI_CHA*100),1)),"%)")), segment.size = ifelse(Pct_ofTOT_AzI_CHA==0, 0, 0.75)), size = 3, color = "black", fontface = "bold",box.padding = 0.5, point.padding = 0.5, max.overlaps = Inf, guide=FALSE) + ###CHANGE!!
+
+      #annotation_north_arrow(location = "tl", which_north = "true", height = unit(2.0, "cm"), width = unit(2.0, "cm"), pad_x = unit(0.15, "in"), pad_y = unit(1.3, "in"), style = north_arrow_fancy_orienteering, line_width = 2.5, text_size = 40, text_face = "bold") +
+      #annotation_scale(location = "tl", width_hint = 0.5, pad_x = unit(0.15, "in"), pad_y = unit(0.1, "in"), text_size = 40, text_face = "bold") +
+
+	  #######################
+      labs(title = "              Observed Decorative Variant Richness", 
+	  subtitle = "            Hodge & Minc Decorated Ceramic Tabulations for SE BOM Survey Region Sites") + ###CHANGE!!
+	  #######################
+	  
+      theme_void() +
+      theme(plot.title = element_text(hjust = 0.5, vjust = 5, size=20, face="bold"), legend.title = element_text(color = "black", face="bold", size = 18), legend.text = element_text(size=10, face="bold") , legend.justification = "bottom", plot.subtitle=element_text(size=12, hjust=0.5, vjust = 5,face="italic", color="black"), plot.margin = unit(c(1,1,0.5,0), "cm")) +
+      
+	  
+      coord_equal(xlim = c(478300, 530959.4), ylim = c(2106861, 2169877), expand = F, clip='off')
+
+hist <- ggplot() + 
+	geom_histogram(RichSim.Vars.c.Resid.Comb, mapping = aes(x=Rich.obs,  
+color = as.factor(SurvReg), fill = as.factor(SurvReg)), alpha=1.0, position = "stack") +   # "stack" "dodge" "identity"
+	scale_fill_manual(name="Survey\nRegion",
+					   values = c("TX"="sienna1", 
+                                   "IX"="steelblue1", 
+                                   "CH"="chartreuse3", 
+                                   "XO"="orchid1")) +
+	scale_color_manual(values = c("TX"="sienna3", 
+                                   "IX"="steelblue3", 
+                                   "CH"="chartreuse4", 
+                                   "XO"="orchid"),	guide = F) +
+  scale_x_continuous() +
+	scale_y_continuous() +
+	labs(x = "Observed Richness", y = "Count") +
+	theme(axis.text = element_text(size = 10, color="black"), axis.title = element_text(size = 10, face="bold"), 
+			legend.position="right", legend.title = element_text(size = 10, color="black", face="bold"), 
+			legend.text = element_text(size = 8, color="black", face="bold"), 
+			legend.box.margin = margin(t = 0, r = 0, b = 0, l = 0, unit = "pt"),
+			legend.key.height = unit(4, "mm"),
+			legend.key.width = unit(4, "mm"))
+
+ 
+ Map + 
+  inset_element(
+    hist, 
+    left = unit(6.3, "inches"),
+    bottom = unit(4.2, "inches"), 
+    right = unit(9.65, "inches"), 
+    top = unit(7.75, "inches"), #unit(1, "npc") - unit(55, "mm"),
+    align_to = "full",
+    clip = T
+  )
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
